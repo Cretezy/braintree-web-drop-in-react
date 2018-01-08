@@ -1,7 +1,7 @@
 # Braintree Web Drop-in React  [![Build Status](https://travis-ci.org/Cretezy/braintree-web-drop-in-react.svg?branch=master)](https://travis-ci.org/Cretezy/braintree-web-drop-in-react) [![npm version](http://img.shields.io/npm/v/braintree-web-drop-in-react.svg?style=flat)](https://www.npmjs.org/package/braintree-web-drop-in-react)
 
 <p align="center">
-    This is a React component that wraps `braintree-web-drop-in` (v3).
+    This is a React component that wraps <code>braintree-web-drop-in</code> (v3).
     <img 
         alt="braintree-web-drop-in-react example"
         src="https://raw.githubusercontent.com/Cretezy/braintree-web-drop-in-react/master/example/index.png" 
