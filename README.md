@@ -11,7 +11,10 @@
 This is a React component that wraps `braintree-web-drop-in` (v3).
 
 > Disclaimer: this is not an official Braintree module.
+
 > For issues and information concerning `braintree-web-drop-in` or `braintree-web` in general, please see [`braintree/braintree-web-drop-in`](https://github.com/braintree/braintree-web-drop-in) and [`braintree/braintree-web`](https://github.com/braintree/braintree-web).
+
+> This is an maintainted and updated fork of [jeffcarp/braintree-react](https://github.com/jeffcarp/braintree-react).
 
 ## Install
 
