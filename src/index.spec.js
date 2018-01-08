@@ -7,7 +7,9 @@ describe("DropIn", () => {
 		const braintreeWebDropIn = require("braintree-web-drop-in");
 		braintreeWebDropIn.create = jest.genMockFunction();
 
-		const component = renderer.create(<DropIn authorization="bogus" />);
+		const component = renderer.create(
+			<DropIn options={{ authorization: "bogus" }} />
+		);
 
 		const passedArgs = braintreeWebDropIn.create.mock.calls[0];
 		expect(passedArgs[0].authorization).toEqual("bogus");
@@ -23,7 +25,7 @@ describe("DropIn", () => {
 
 		const component = renderer.create(
 			<DropIn
-				authorization="bogus"
+				options={{ authorization: "bogus" }}
 				onInstance={() => {
 					component.unmount();
 					const callNumber = teardownMock.mock.calls.length;

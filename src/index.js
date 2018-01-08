@@ -7,16 +7,15 @@ export default class DropIn extends React.Component {
 	static displayName = "BraintreeWebDropIn";
 
 	static propTypes = {
-		authorization: PropTypes.string.isRequired,
-		options: PropTypes.object,
+		options: PropTypes.object.isRequired,
 		preselectVaultedPaymentMethod: PropTypes.bool,
 		onInstance: PropTypes.func,
 		onNoPaymentMethodRequestable: PropTypes.func,
 		onPaymentMethodRequestable: PropTypes.func,
 		onPaymentOptionSelected: PropTypes.func
 	};
+
 	static defaultProps = {
-		options: {},
 		preselectVaultedPaymentMethod: true
 	};
 
@@ -25,7 +24,6 @@ export default class DropIn extends React.Component {
 
 	async componentDidMount() {
 		this.instance = await BraintreeWebDropIn.create({
-			authorization: this.props.authorization,
 			container: ReactDOM.findDOMNode(this.wrapper),
 			...this.props.options
 		});

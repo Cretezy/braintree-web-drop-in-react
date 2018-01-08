@@ -14,7 +14,7 @@
 
 > For issues and information concerning `braintree-web-drop-in` or `braintree-web` in general, please see [`braintree/braintree-web-drop-in`](https://github.com/braintree/braintree-web-drop-in) and [`braintree/braintree-web`](https://github.com/braintree/braintree-web).
 
-> This is an maintainted and updated fork of [jeffcarp/braintree-react](https://github.com/jeffcarp/braintree-react).
+> This is an maintainted and updated rewrite of [jeffcarp/braintree-react](https://github.com/jeffcarp/braintree-react).
 
 ## Install
 
@@ -84,20 +84,10 @@ See [`example`](example/README.md).
 
 ## Props
 
-### `authorization` (`string`, required)
-
-A client token (or tokenization key),
-generated from the [Braintree server SDK](https://developers.braintreepayments.com/start/hello-server/#generate-a-client-token).
-
-### `options` (`object`)
+### `options` (`object`, required)
 
 Options to setup Braintree.
 See [Drop-In options](https://braintree.github.io/braintree-web-drop-in/docs/current/module-braintree-web-drop-in.html#.create).
-
-### `preselectVaultedPaymentMethod` (`boolean`, default: `true`)
-
-Whether or not to initialize with a vaulted payment method pre-selected.
-Only applicable when using a client token with a customer with saved payment methods.
 
 ### `onInstance` (`function: instance`)
 
@@ -107,8 +97,6 @@ You can call all regular [Drop-In methods](https://braintree.github.io/braintree
 The `on` events are already listened to using `onNoPaymentMethodRequestable`,
 `onPaymentMethodRequestable`, `onPaymentOptionSelected`. See below.
 
-Functions on the `instance` will return a Promise unless a callback is present as the last arguments. Ignore `teardown` as this is automatically handled.
-
 #### [`isntance.requestPaymentMethod([callback])`: `[Promise]`](https://braintree.github.io/braintree-web-drop-in/docs/current/Dropin.html#requestPaymentMethod)
 
 Requests a payment method object which includes the payment method nonce used by by the Braintree Server SDKs.
@@ -117,6 +105,8 @@ is returned when the payment method is a card, a [paypalPaymentMethodPayload](ht
 is returned when the payment method is a PayPal account.
 
 If a payment method is not available, an error will appear in the UI. When a callback is used, an error will be passed to it. If no callback is used, the returned Promise will be rejected with an error.
+
+Returns a Promise if no callback is provided.
 
 #### [`instance.clearSelectedPaymentMethod()`](https://braintree.github.io/braintree-web-drop-in/docs/current/Dropin.html#clearSelectedPaymentMethod): `void`
 
@@ -140,3 +130,8 @@ Ran for [events](https://braintree.github.io/braintree-web-drop-in/docs/current/
 * [`onNoPaymentMethodRequestable`](https://braintree.github.io/braintree-web-drop-in/docs/current/Dropin.html#event:paymentMethodRequestable)
 * [`onPaymentMethodRequestable`](https://braintree.github.io/braintree-web-drop-in/docs/current/Dropin.html#event:noPaymentMethodRequestable)
 * [`onPaymentOptionSelected`](https://braintree.github.io/braintree-web-drop-in/docs/current/Dropin.html#event:paymentOptionSelected)
+
+### `preselectVaultedPaymentMethod` (`boolean`, default: `true`)
+
+Whether or not to initialize with a vaulted payment method pre-selected.
+Only applicable when using a client token with a customer with saved payment methods.
