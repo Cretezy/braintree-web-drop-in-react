@@ -25,9 +25,11 @@ export default formats.map(format => ({
 			plugins: [
 				"transform-class-properties",
 				"transform-object-rest-spread",
+				"transform-runtime",
 				"external-helpers"
 			],
-			babelrc: false
+			babelrc: false,
+			runtimeHelpers: true
 		}),
 		commonjs(),
 		resolve()
