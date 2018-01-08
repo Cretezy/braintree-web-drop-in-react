@@ -69,9 +69,7 @@ class Store extends React.Component {
 				<div>
 					<DropIn
 						authorization={this.state.clientToken}
-						onInstance={instance => (this.instance = instance)}
-						onPaymentMethodReceived={}
-					/>
+						onInstance={instance => (this.instance = instance)}					/>
 					<button onClick={this.buy.bind(this)}>Buy</button>
 				</div>
 			);
