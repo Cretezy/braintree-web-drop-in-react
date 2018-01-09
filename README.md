@@ -26,6 +26,8 @@ or
 npm install braintree-web-drop-in-react
 ```
 
+Requires Node.js v8+.
+
 ## Drop-In
 
 ### Complete example

@@ -1,23 +1,30 @@
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import babel from 'rollup-plugin-babel';
+import pkg from "./package.json";
 
-const formats = ["cjs", "es"];
-export default formats.map(format => ({
+export default [{
 	input: 'src/index.js',
-	output: {
-		file: `dist/${format}/index.js`,
-		format
-	},
-	external: ['react', 'react-dom', 'prop-types'],
+	output: [{
+		file: pkg.module,
+		format: "es"
+	}, {
+		file: pkg.main,
+		format: "cjs"
+	}],
+	external: ['react', 'react-dom', 'prop-types', 'braintree-web-drop-in'],
 	plugins: [
 		babel({
+			sourceMap: true,
 			exclude: "node_modules/**",
 			presets: [
 				[
 					"env",
 					{
-						modules: false
+						modules: false,
+						targets: {
+							node: 8 // Current LTS
+						}
 					}
 				],
 				"react"
@@ -25,8 +32,8 @@ export default formats.map(format => ({
 			plugins: [
 				"transform-class-properties",
 				"transform-object-rest-spread",
-				"transform-runtime",
-				"external-helpers"
+				"external-helpers",
+				"transform-runtime"
 			],
 			babelrc: false,
 			runtimeHelpers: true
@@ -34,4 +41,4 @@ export default formats.map(format => ({
 		commonjs(),
 		resolve()
 	]
-}));
+}]
