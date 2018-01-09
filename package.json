@@ -1,6 +1,6 @@
 {
   "name": "braintree-web-drop-in-react",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "React component for Braintree Web Drop-In (v3)",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
