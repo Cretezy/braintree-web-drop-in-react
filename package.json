@@ -14,6 +14,9 @@
     "preexample": "npm run build",
     "example": "parcel -d dist-example example/index.html"
   },
+  "pre-commit": [
+    "prettier"
+  ],
   "author": "Charles Crete <charles@cretezy.com>",
   "repository": {
     "type": "git",
@@ -49,6 +52,7 @@
     "babel-preset-react": "^6.24.1",
     "jest": "^22.0.4",
     "parcel-bundler": "^1.4.1",
+    "pre-commit": "^1.2.2",
     "prettier": "^1.9.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",

@@ -21,10 +21,7 @@ export default [{
 				[
 					"env",
 					{
-						modules: false,
-						targets: {
-							node: 8 // Current LTS
-						}
+						modules: false
 					}
 				],
 				"react"
