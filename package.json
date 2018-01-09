@@ -1,9 +1,10 @@
 {
   "name": "braintree-web-drop-in-react",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "React component for Braintree Web Drop-In (v3)",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
+  "js:next": "dist/es/index.js",
   "scripts": {
     "test": "jest",
     "prettier": "prettier --use-tabs --write {src,example}/**/*.js",
@@ -26,9 +27,11 @@
     "react-component"
   ],
   "files": [
-    "README.md",
-    "LICENSE",
-    "dist"
+    "/README.md",
+    "/LICENSE",
+    "/dist/cjs/index.js",
+    "/dist/es/index.js",
+    "/src/index.js"
   ],
   "peerDependencies": {
     "react": ">=15.1.0",
