@@ -3,7 +3,6 @@ node_js:
 - stable
 - node
 cache: yarn
-
 stages:
 - test
 - name: deploy
@@ -30,7 +29,7 @@ jobs:
     - provider: npm
       email: charles@cretezy.com
       api_key:
-        secure: Iygd0dBsRQ10xfuUQyaeHS1DoVWcl+UMgJI1J5q+YmWc46SPS1RI0oGZ75UCT1PxJKTz39yu2tiLB3q/3T41vaMel9nEm5XtOyv0PcML6LM4ak+HC7b6HGGV9B4QtBgSdDSr/H4uu40ICzAC37i6ACPN83b1EupbxMtt1YUZ7b9So8fhGdTqw+LXH1ohCFKZ7OQ+bgsSkL5u6IVOVNBpFSVxfP5zsFwjj+9HWiW/JdBtW4xgT/e03w+f/qZdclxQYJNkX24L7/6fFV7zpqbjSZXojvXtDCtZGTLsPPsP+eUX6WNTWYUi/RhWPBRFbOHgGvY83IuTe+Jkg+5NYjJiA6hG5RAiA0MOK+ZnF0yLwExDnCwhYpvbfyLIjNwnmkLIAc/b8zLJIgz+XGc4FU4U21bOao/omqzmftzTIOhODgDIQczssH0ztRvNIaBQ80wtd3ahfsBNNTIZRB5GvvJhzqQXcijPDm57XViaK5i4ymsbBhQ2Zj7U7430Q3ewwi0ZOtSQmppLdYTFiVrun5JExgLdwvGJulGL1lTk+VRTPaLcowbrx7psa5aHKB3P7co1rCeKXCt13G1PXy8L/ZLs/Cz7E9LKQc1aWbcnR1s+E3wH31pNishbBd6LrIs3hfLuqhYu1LC/q0sGt41Lea7+kIVT6OrLkdDYLk8yfoRMi70=
+        secure: jPO+nCqgwTYB/z00bm/wF5qP2R7depLuWGDtx7tSpBsoPeRxZiBhfzQ+xC8yPw9v9eCygGbsO5DRDHi/6lpv/hBe5dA8Cg2nyL7snFAeRqeY58ydVoVglTd2q7mJtNHUHXCN/NQgjq8OzJaLinelO0wf7sJrjSipXZguifAamXCHVtxQPZt5SgeLj8/Lq12EvbfBVSBbluYbVy9cJssvlkcoTHWNKGpVrSvXnUUGrUEEvUnbGg7c2PJmHz6cV0aSqVxRfHNhNtLjOJ1ZbTPF8yVz3hKeYbDNCvxUwWjSuS9rG9IgA+jB3y1q5PDfGvPL22PSDGl9Au8Wi0HwF+BT5AAjZN/WhsBAjPxpKMpwpZoUayzuyEeezw+xXza+ipBeUsIwwo+rrSXr7nrFKquycs4cF4uCeGidxktWkjK0YBrynqA5lHhEGtubDY7OBwTMjJ/iaaEuFwmnwJ3Sj9wGbPuRmabTJ0Jc6ovs8wNWwb+7SGiewQhhBdpinFpbNzwSKklKbITWRr6a16XrgDEQHDyvpu+nF034DjCqoyiLciNLelnflAwX7DbBL5A0k0ogmHLuPmFGBcrrQYM3/9HLknM9/py3M0cm150ac2+z/E5uXlPQZyqcraH269eKbXDu9KUyQPTyhZVwBbKPwb4UczMZDhGa4FOC4saNhjCR2Uw=
       skip_cleanup: true
       on:
         tags: true
