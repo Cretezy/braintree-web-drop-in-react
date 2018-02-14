@@ -1,7 +1,6 @@
-import "babel-polyfill";
 import React from "react";
 import ReactDOM from "react-dom";
-import DropIn from "../dist/es";
+import DropIn from "../dist";
 
 class Example extends React.Component {
 	render() {

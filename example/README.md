@@ -2,14 +2,7 @@
 
 ## Run the example
 
-Clone and `cd` into repository then: 
-
-```bash
-yarn
-yarn example
-```
-or
-```bash
-npm install
-npm run example
-```
+* Clone
+* `cd example`
+* `yarn` or `npm install`
+* `yarn start` or `npm start`

@@ -1,69 +1,47 @@
 {
-  "name": "braintree-web-drop-in-react",
-  "version": "0.2.7",
-  "description": "React component for Braintree Web Drop-In (v3)",
-  "main": "dist/cjs/index.js",
-  "module": "dist/es/index.js",
-  "js:next": "dist/es/index.js",
-  "scripts": {
-    "test": "jest",
-    "prettier": "prettier --write {src,example}/**/*.js",
-    "build": "rollup -c",
-    "build-watch": "rollup -cw",
-    "prepublishOnly": "npm test && npm run build",
-    "preexample": "npm run build",
-    "example": "parcel -d dist-example example/index.html"
-  },
-  "pre-commit": [
-    "prettier"
-  ],
-  "author": "Charles Crete <charles@cretezy.com>",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/Cretezy/braintree-web-drop-in-react.git"
-  },
-  "license": "MIT",
-  "keywords": [
-    "braintree",
-    "payment",
-    "credit card form",
-    "react-component"
-  ],
-  "files": [
-    "/README.md",
-    "/LICENSE",
-    "/dist/cjs/index.js",
-    "/dist/es/index.js",
-    "/src/index.js"
-  ],
-  "peerDependencies": {
-    "react": ">=15.1.0",
-    "react-dom": ">=15.1.0"
-  },
-  "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-jest": "^22.0.4",
-    "babel-plugin-external-helpers": "^6.22.0",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "jest": "^22.0.4",
-    "parcel-bundler": "^1.4.1",
-    "pre-commit": "^1.2.2",
-    "prettier": "^1.9.2",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-test-renderer": "^16.2.0",
-    "rollup": "^0.53.3",
-    "rollup-plugin-babel": "^3.0.3",
-    "rollup-plugin-commonjs": "8.2.3",
-    "rollup-plugin-node-resolve": "^3.0.0"
-  },
-  "dependencies": {
-    "braintree-web-drop-in": "^1.9.2",
-    "prop-types": ">=15.6.0"
-  }
+	"name": "braintree-web-drop-in-react",
+	"version": "0.2.8",
+	"description": "React component for Braintree Web Drop-In (v3)",
+	"main": "dist/index.js",
+	"scripts": {
+		"watch": "noderize-scripts watch",
+		"build": "noderize-scripts build",
+		"start": "noderize-scripts start",
+		"format": "noderize-scripts format",
+		"test": "noderize-scripts test",
+		"clean": "noderize-scripts clean",
+		"prepack":
+			"noderize-scripts clean && noderize-scripts build --env production"
+	},
+	"author": "Charles Crete <charles@cretezy.com>",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/Cretezy/braintree-web-drop-in-react.git"
+	},
+	"license": "MIT",
+	"keywords": ["braintree", "payment", "credit card form", "react-component"],
+	"files": [],
+	"peerDependencies": {
+		"react": ">=15.1.0",
+		"react-dom": ">=15.1.0"
+	},
+	"dependencies": {
+		"braintree-web-drop-in": "^1.9.2",
+		"prop-types": ">=15.6.0"
+	},
+	"devDependencies": {
+		"@babel/preset-react": "^7.0.0-beta.40",
+		"noderize-scripts": "^0.3.3",
+		"react": ">=15.1.0",
+		"react-dom": ">=15.1.0",
+		"react-test-renderer": "^16.2.0"
+	},
+	"noderize": {
+		"babel": {
+			"presets": ["@babel/preset-react"]
+		}
+	},
+	"prettier": {
+		"useTabs": true
+	}
 }
