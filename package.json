@@ -1,6 +1,6 @@
 {
 	"name": "braintree-web-drop-in-react",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "React component for Braintree Web Drop-In (v3)",
 	"main": "dist/index.js",
 	"scripts": {
@@ -31,7 +31,7 @@
 	},
 	"devDependencies": {
 		"@babel/preset-react": "^7.0.0-beta.40",
-		"noderize-scripts": "^0.3.5",
+		"noderize-scripts": "^0.3.6",
 		"react": ">=15.1.0",
 		"react-dom": ">=15.1.0",
 		"react-test-renderer": "^16.2.0"

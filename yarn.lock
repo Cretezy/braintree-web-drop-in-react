@@ -3594,9 +3594,9 @@ node-pre-gyp@^0.6.39:
     tar "^2.2.1"
     tar-pack "^3.4.0"
 
-noderize-scripts@^0.3.5:
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/noderize-scripts/-/noderize-scripts-0.3.5.tgz#c84bca6aaca8165963f3db4ee41e9dc40eeab9ac"
+noderize-scripts@^0.3.6:
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/noderize-scripts/-/noderize-scripts-0.3.6.tgz#d127344b1e27e9a7ed5f90abdc70d6e6611831c6"
   dependencies:
     "@babel/core" "^7.0.0-beta.40"
     "@babel/plugin-proposal-decorators" "^7.0.0-beta.40"
