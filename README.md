@@ -1,4 +1,4 @@
-# Braintree Web Drop-in React  [![Build Status](https://travis-ci.org/Cretezy/braintree-web-drop-in-react.svg?branch=master)](https://travis-ci.org/Cretezy/braintree-web-drop-in-react) [![npm version](http://img.shields.io/npm/v/braintree-web-drop-in-react.svg?style=flat)](https://www.npmjs.org/package/braintree-web-drop-in-react)
+# Braintree Web Drop-in React [![Build Status](https://travis-ci.org/Cretezy/braintree-web-drop-in-react.svg?branch=master)](https://travis-ci.org/Cretezy/braintree-web-drop-in-react) [![npm version](http://img.shields.io/npm/v/braintree-web-drop-in-react.svg?style=flat)](https://www.npmjs.org/package/braintree-web-drop-in-react)
 
 <p align="center">
     This is a React component that wraps <code>braintree-web-drop-in</code> (v3).
@@ -8,7 +8,6 @@
         width="417"
     />
 </p>
-
 
 > Disclaimer: this is not an official Braintree module.
 
@@ -20,9 +19,7 @@
 
 ```bash
 yarn add braintree-web-drop-in-react
-```
-or
-```bash
+# or
 npm install braintree-web-drop-in-react
 ```
 
