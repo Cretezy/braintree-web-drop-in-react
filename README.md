@@ -97,7 +97,7 @@ You can call all regular [Drop-In methods](https://braintree.github.io/braintree
 The `on` events are already listened to using `onNoPaymentMethodRequestable`,
 `onPaymentMethodRequestable`, `onPaymentOptionSelected`. See below.
 
-#### [`isntance.requestPaymentMethod([callback])`: `[Promise]`](https://braintree.github.io/braintree-web-drop-in/docs/current/Dropin.html#requestPaymentMethod)
+#### [`instance.requestPaymentMethod([callback])`: `[Promise]`](https://braintree.github.io/braintree-web-drop-in/docs/current/Dropin.html#requestPaymentMethod)
 
 Requests a payment method object which includes the payment method nonce used by by the Braintree Server SDKs.
 The structure of this payment method object varies by type: a [cardPaymentMethodPayload](https://braintree.github.io/braintree-web-drop-in/docs/current/Dropin.html#~cardPaymentMethodPayload)
