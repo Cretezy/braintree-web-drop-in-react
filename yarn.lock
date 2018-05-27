@@ -1166,26 +1166,26 @@ braces@^2.3.0:
     split-string "^3.0.2"
     to-regex "^3.0.1"
 
-braintree-web-drop-in@^1.9.2:
-  version "1.9.4"
-  resolved "https://registry.yarnpkg.com/braintree-web-drop-in/-/braintree-web-drop-in-1.9.4.tgz#ca7f2e20f8b55d0140f724abe12f8daedeb60e27"
+braintree-web-drop-in@^1.11.0:
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/braintree-web-drop-in/-/braintree-web-drop-in-1.11.0.tgz#f927b369b431f861ba18ecc3ffa0b3dab545da05"
   dependencies:
     "@braintree/browser-detection" "1.7.0"
     "@braintree/wrap-promise" "1.1.1"
-    braintree-web "3.30.0"
+    braintree-web "3.34.0"
     promise-polyfill "7.0.2"
 
-braintree-web@3.30.0:
-  version "3.30.0"
-  resolved "https://registry.yarnpkg.com/braintree-web/-/braintree-web-3.30.0.tgz#be0a57573a8e1158ded8b7ab0e8d5d3fb3cab70c"
+braintree-web@3.34.0:
+  version "3.34.0"
+  resolved "https://registry.yarnpkg.com/braintree-web/-/braintree-web-3.34.0.tgz#00d1f01e7c0d7235a55dacae789163e9a4772c3d"
   dependencies:
     "@braintree/browser-detection" "1.7.0"
     "@braintree/iframer" "1.0.3"
     "@braintree/sanitize-url" "2.1.0"
     "@braintree/wrap-promise" "1.1.1"
-    card-validator "4.2.0"
-    credit-card-type "6.1.1"
-    framebus "2.0.8"
+    card-validator "4.3.0"
+    credit-card-type "6.3.0"
+    framebus "3.0.1"
     inject-stylesheet "1.0.0"
     promise-polyfill "7.0.2"
     restricted-input "1.2.7"
@@ -1337,11 +1337,11 @@ caniuse-lite@^1.0.30000807:
   version "1.0.30000808"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000808.tgz#7d759b5518529ea08b6705a19e70dbf401628ffc"
 
-card-validator@4.2.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/card-validator/-/card-validator-4.2.0.tgz#a2a033f7f93d60f00aa306f63db183b0c555acaf"
+card-validator@4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/card-validator/-/card-validator-4.3.0.tgz#c7099055ae572eb0dd5e35c6b88414cefcb95d23"
   dependencies:
-    credit-card-type "^6.0.0"
+    credit-card-type "^6.2.0"
 
 caseless@~0.12.0:
   version "0.12.0"
@@ -1593,13 +1593,9 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-credit-card-type@6.1.1:
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/credit-card-type/-/credit-card-type-6.1.1.tgz#f6e5ac1ab20609c793790c5b5488a900633d8a60"
-
-credit-card-type@^6.0.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/credit-card-type/-/credit-card-type-6.2.0.tgz#1b7cc4abb8860f089bdfe7b6ca5654327933a19e"
+credit-card-type@6.3.0, credit-card-type@^6.2.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/credit-card-type/-/credit-card-type-6.3.0.tgz#6e6c13e7e592f83b067c24429486a4f250eaa030"
 
 cross-spawn@^5.0.1:
   version "5.1.0"
@@ -2218,9 +2214,9 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-framebus@2.0.8:
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/framebus/-/framebus-2.0.8.tgz#01c7ee5f765beb3f9a2e0390ca0b7088b2bf76d3"
+framebus@3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/framebus/-/framebus-3.0.1.tgz#dbabc3b08e39bf33d248e9af754bd8ffb05cfcce"
 
 from2@^2.1.0:
   version "2.3.0"
