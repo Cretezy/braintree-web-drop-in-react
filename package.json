@@ -41,6 +41,6 @@
     "babel": {
       "presets": ["@babel/preset-react"]
     },
-    "target": "web"
+    "target": "node"
   }
 }
