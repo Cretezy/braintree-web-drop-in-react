@@ -132,4 +132,10 @@ Ran for [events](https://braintree.github.io/braintree-web-drop-in/docs/current/
 Whether or not to initialize with a vaulted payment method pre-selected.
 Only applicable when using a client token with a customer with saved payment methods.
 
+## Package size
+
+Since this depends on `braintree-web-drop-in`, this can be a [quite large package](https://bundlephobia.com/result?p=braintree-web-drop-in-react) (324.5 kB minified). This package alone is only ~3 kB.
+
+To avoid loading all this code when not used, it is **strongly recommended** to dynamically import it using `import()`. Using [`@loadable/component`](https://www.npmjs.com/package/@loadable/component) or [`react-loadable`](https://www.npmjs.com/package/react-loadable) can make this quite simple.
+
 > This is an maintainted and updated rewrite of [jeffcarp/braintree-react](https://github.com/jeffcarp/braintree-react).
