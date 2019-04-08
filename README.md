@@ -13,8 +13,6 @@
 
 > For issues and information concerning `braintree-web-drop-in` or `braintree-web` in general, please see [`braintree/braintree-web-drop-in`](https://github.com/braintree/braintree-web-drop-in) and [`braintree/braintree-web`](https://github.com/braintree/braintree-web).
 
-> This is an maintainted and updated rewrite of [jeffcarp/braintree-react](https://github.com/jeffcarp/braintree-react).
-
 ## Install
 
 ```bash
@@ -22,8 +20,6 @@ yarn add braintree-web-drop-in-react
 # or
 npm install braintree-web-drop-in-react
 ```
-
-Requires Node.js v8+.
 
 ## Drop-In
 
@@ -127,11 +123,13 @@ If updateConfiguration is called after a user completes the PayPal authorization
 
 Ran for [events](https://braintree.github.io/braintree-web-drop-in/docs/current/Dropin.html#on).
 
-* [`onNoPaymentMethodRequestable`](https://braintree.github.io/braintree-web-drop-in/docs/current/Dropin.html#event:paymentMethodRequestable)
-* [`onPaymentMethodRequestable`](https://braintree.github.io/braintree-web-drop-in/docs/current/Dropin.html#event:noPaymentMethodRequestable)
-* [`onPaymentOptionSelected`](https://braintree.github.io/braintree-web-drop-in/docs/current/Dropin.html#event:paymentOptionSelected)
+- [`onNoPaymentMethodRequestable`](https://braintree.github.io/braintree-web-drop-in/docs/current/Dropin.html#event:paymentMethodRequestable)
+- [`onPaymentMethodRequestable`](https://braintree.github.io/braintree-web-drop-in/docs/current/Dropin.html#event:noPaymentMethodRequestable)
+- [`onPaymentOptionSelected`](https://braintree.github.io/braintree-web-drop-in/docs/current/Dropin.html#event:paymentOptionSelected)
 
 ### `preselectVaultedPaymentMethod` (`boolean`, default: `true`)
 
 Whether or not to initialize with a vaulted payment method pre-selected.
 Only applicable when using a client token with a customer with saved payment methods.
+
+> This is an maintainted and updated rewrite of [jeffcarp/braintree-react](https://github.com/jeffcarp/braintree-react).

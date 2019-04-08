@@ -1,35 +1,5 @@
 language: node_js
 node_js:
-- stable
-- node
+  - stable
+  - node
 cache: yarn
-stages:
-- test
-- name: deploy
-  if: tag IS present AND repo = Cretezy/braintree-web-drop-in-react
-
-jobs:
-  include:
-  - stage: deploy
-    env: DEPLOY=releases
-    script: yarn pack
-    deploy:
-    - provider: releases
-      api_key:
-        secure: fPLZdUTGObHWbXBytpx0yveTCONFhUGHskTPddzVVLxipLKBFjMwhTjXM6gvZ4lYHBzIy00KqGLk5katiQNOfqwnocGABRvYQW8OVciIrVr9D02Xj9QEgeMvPW0Qrf0JltyMttY4i0jt3gpXGXwGBvJy5sX5kW8TPSKY14n0muNMmCpMbSHv0DipMoStpHqTap/5teAsI/eLWMU/BOEAzHKzxhouaJI3KI6DyFEUDi4sQjT88F55ChEUhvHXLW0U1P1bEON5W9Qj41XkYzEWRMEWgvPdkCMtSYhB16NBA3cQr2hfGWOj0NVX7VZpmi93omzUbD/CWThVQbrfAjqwhoZJC/Y3nHEz2W7OxFEiI5NIg+W0DV7i4myzzEPx3aDmweiJP0xLyr+kFFf/0dCZmjwDWgaQsAoA593knpiLzKm8ACQBMXH2FT30KX16G+dmV77Gha+meru9DYr3BW4iSvH2OuLqYOOW0+ehp+A91v/tZEHcPQAZVMgobvBDU/cOn7yzwdgrsiiVNmd80MSCfBwvh3KB1G3Yto0VXSK9hRp+S1UGSINQNUdQ674A0YYFPTjz1wqA+TRDwmw25wu5b8zD2Liz2ZwS7HjgY7glBGc4DEZp86094nlVxgixfyXpYPMAeClQhUfjm7NWWxsexwAdAtb1qvNOZQ6bivgDd5Q=
-      file_glob: true
-      file: braintree-web-drop-in-react--*.tgz
-      skip_cleanup: true
-      on:
-        tags: true
-  - stage: deploy
-    env: DEPLOY=npm
-    script: skip
-    deploy:
-    - provider: npm
-      email: charles@cretezy.com
-      api_key:
-        secure: jPO+nCqgwTYB/z00bm/wF5qP2R7depLuWGDtx7tSpBsoPeRxZiBhfzQ+xC8yPw9v9eCygGbsO5DRDHi/6lpv/hBe5dA8Cg2nyL7snFAeRqeY58ydVoVglTd2q7mJtNHUHXCN/NQgjq8OzJaLinelO0wf7sJrjSipXZguifAamXCHVtxQPZt5SgeLj8/Lq12EvbfBVSBbluYbVy9cJssvlkcoTHWNKGpVrSvXnUUGrUEEvUnbGg7c2PJmHz6cV0aSqVxRfHNhNtLjOJ1ZbTPF8yVz3hKeYbDNCvxUwWjSuS9rG9IgA+jB3y1q5PDfGvPL22PSDGl9Au8Wi0HwF+BT5AAjZN/WhsBAjPxpKMpwpZoUayzuyEeezw+xXza+ipBeUsIwwo+rrSXr7nrFKquycs4cF4uCeGidxktWkjK0YBrynqA5lHhEGtubDY7OBwTMjJ/iaaEuFwmnwJ3Sj9wGbPuRmabTJ0Jc6ovs8wNWwb+7SGiewQhhBdpinFpbNzwSKklKbITWRr6a16XrgDEQHDyvpu+nF034DjCqoyiLciNLelnflAwX7DbBL5A0k0ogmHLuPmFGBcrrQYM3/9HLknM9/py3M0cm150ac2+z/E5uXlPQZyqcraH269eKbXDu9KUyQPTyhZVwBbKPwb4UczMZDhGa4FOC4saNhjCR2Uw=
-      skip_cleanup: true
-      on:
-        tags: true

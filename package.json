@@ -1,46 +1,51 @@
 {
   "name": "braintree-web-drop-in-react",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "React component for Braintree Web Drop-In (v3)",
-  "main": "dist/index.js",
-  "scripts": {
-    "watch": "noderize-scripts watch",
-    "build": "noderize-scripts build",
-    "start": "noderize-scripts start",
-    "format": "noderize-scripts format",
-    "test": "noderize-scripts test",
-    "clean": "noderize-scripts clean",
-    "prepack":
-      "noderize-scripts clean && noderize-scripts build --env production"
-  },
-  "author": "Charles Crete <charles@cretezy.com>",
+  "keywords": [
+    "braintree",
+    "credit card form",
+    "payment",
+    "react-component"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/Cretezy/braintree-web-drop-in-react.git"
   },
   "license": "MIT",
-  "keywords": ["braintree", "payment", "credit card form", "react-component"],
+  "author": "Charles Crete <charles@cretezy.com>",
   "files": [],
-  "peerDependencies": {
-    "react": ">=15.1.0",
-    "react-dom": ">=15.1.0"
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src -d lib --source-maps && terser lib/index.js -o lib/index.min.js --source-map 'content=lib/index.js.map'",
+    "clean": "rimraf lib",
+    "format": "prettier --write 'src/**.js' package.json CHANGELOG.md README.md .travis.yml example/index.html example/index.js example/README.md example/package.json",
+    "test": "jest",
+    "example": "cd example && npm install && npm run start"
   },
   "dependencies": {
-    "braintree-web-drop-in": "^1.12.0",
-    "prop-types": ">=15.1.0",
-    "@noderize/runtime": "^0.7.5"
+    "braintree-web-drop-in": "^1.17.1",
+    "prop-types": "^15.7.0"
   },
   "devDependencies": {
-    "@babel/preset-react": "^7.0.0-rc.1",
-    "@noderize/scripts": "^0.7.5",
-    "react": ">=16.4.2",
-    "react-dom": ">=16.4.2",
-    "react-test-renderer": "^16.4.2"
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-transform-runtime": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.4.3",
+    "babel-jest": "^24.7.1",
+    "jest": "^24.7.1",
+    "prettier": "^1.16.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-test-renderer": "^16.8.6",
+    "rimraf": "^2.6.3",
+    "terser": "^3.17.0"
   },
-  "noderize": {
-    "babel": {
-      "presets": ["@babel/preset-react"]
-    },
-    "target": "node"
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
   }
 }

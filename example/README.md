@@ -2,10 +2,10 @@
 
 To run the example:
 
-* Clone
-* `cd example`
-* `yarn` or `npm install`
-* `yarn start` or `npm start`
+- Clone
+- `cd example`
+- `yarn` or `npm install`
+- `yarn start` or `npm start`
 
 You should see:
 
