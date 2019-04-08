@@ -14,7 +14,7 @@
   },
   "license": "MIT",
   "author": "Charles Crete <charles@cretezy.com>",
-  "files": [],
+  "files": ["lib/*"],
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src -d lib --source-maps && terser lib/index.js -o lib/index.min.js --source-map 'content=lib/index.js.map'",
