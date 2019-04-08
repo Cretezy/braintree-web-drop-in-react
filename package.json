@@ -1,6 +1,6 @@
 {
   "name": "braintree-web-drop-in-react",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "React component for Braintree Web Drop-In (v3)",
   "keywords": [
     "braintree",
@@ -46,6 +46,7 @@
   },
   "peerDependencies": {
     "react": ">=16.0.0",
-    "react-dom": ">=16.0.0"
+    "react-dom": ">=16.0.0",
+    "@babel/runtime": "^7.4.0"
   }
 }
