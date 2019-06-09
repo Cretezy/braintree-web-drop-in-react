@@ -42,7 +42,7 @@
     "react-dom": "^16.8.6",
     "react-test-renderer": "^16.8.6",
     "rimraf": "^2.6.3",
-    "terser": "^3.17.0"
+    "terser": "^4.0.0"
   },
   "peerDependencies": {
     "react": ">=16.0.0",
