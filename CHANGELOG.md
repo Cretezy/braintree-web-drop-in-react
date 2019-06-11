@@ -1,3 +1,8 @@
+## v1.0.8 (2019-06-10)
+
+- Upgrade dependencies
+- Turn on dependabot
+
 ## v1.0.7 (2019-04-08)
 
 - Add `@babel/runtime` peer dependency
