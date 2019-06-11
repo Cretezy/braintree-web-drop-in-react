@@ -786,10 +786,10 @@
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@braintree/iframer/-/iframer-1.0.3.tgz#21dd1fd4cebd4154aeab1efa4d5b0d5f4384364e"
 
-"@braintree/sanitize-url@3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@braintree/sanitize-url/-/sanitize-url-3.0.0.tgz#a0ce629d18d4d435f23a0b880098cff7d99e8bb3"
-  integrity sha512-ymeXC1qObTag/hhEG7BoTMdIzuhKekTxNJTIfiVXsoP1fUXHKBpr0EfCsSA06BuP5gxTPs2vDKjtmYbgvEfY+g==
+"@braintree/sanitize-url@3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@braintree/sanitize-url/-/sanitize-url-3.1.0.tgz#8ff71d51053cd5ee4981e5a501d80a536244f7fd"
+  integrity sha512-GcIY79elgB+azP74j8vqkiXz8xLFfIzbQJdlwOPisgbKT00tviJQuEghOXSMVxJ00HoYJbGswr4kcllUc4xCcg==
 
 "@braintree/wrap-promise@1.1.1":
   version "1.1.1"
@@ -1263,27 +1263,27 @@ braces@^2.3.0, braces@^2.3.1:
     to-regex "^3.0.1"
 
 braintree-web-drop-in@^1.17.1:
-  version "1.17.1"
-  resolved "https://registry.yarnpkg.com/braintree-web-drop-in/-/braintree-web-drop-in-1.17.1.tgz#0f2af60bd0c3969dcade6b370a9a1b0600a4d8fb"
-  integrity sha512-mFSvuV5+MczSlFnsuRriu9FzSWkd40rjydcywceN75FRi1Rzfjh6Q0fKNp0Vnkg4i6VasybAwOViDyKnCLmc0w==
+  version "1.18.0"
+  resolved "https://registry.yarnpkg.com/braintree-web-drop-in/-/braintree-web-drop-in-1.18.0.tgz#13e0c4c89fed685c2a73d7f66b230aabb95e10f9"
+  integrity sha512-AlQD6VepIb2VahUmXd1EStIACVAOZ6UApsrU9VlhWcNJnCmPkgGQ4OivYXNkzbri3lp/bViBqjKtRXKqfTpDNw==
   dependencies:
     "@braintree/asset-loader" "0.2.1"
     "@braintree/browser-detection" "1.7.0"
     "@braintree/class-list" "0.1.0"
     "@braintree/wrap-promise" "1.1.1"
-    braintree-web "3.44.1"
+    braintree-web "3.44.2"
     promise-polyfill "8.1.0"
 
-braintree-web@3.44.1:
-  version "3.44.1"
-  resolved "https://registry.yarnpkg.com/braintree-web/-/braintree-web-3.44.1.tgz#10af8bce01ad16ca8b79977adc914299af4129f9"
-  integrity sha512-i6WFRSni6/2ca3HZWXvQCIJspoY2VTrr/40Pejzqh4sgXqZXD1p2l6mv124lluonWZYN119BLCAFecE0PJeQag==
+braintree-web@3.44.2:
+  version "3.44.2"
+  resolved "https://registry.yarnpkg.com/braintree-web/-/braintree-web-3.44.2.tgz#87c671ee3739d9af699901e66f438281c143c397"
+  integrity sha512-4+Q8phtjTkdqJ9fI7ofOTB5KkwhFtnkl+PsfaunKFcJCyjCLT2AU9CsnB6tIrba16A3KnxZs0+gdRPFcQVc5og==
   dependencies:
     "@braintree/asset-loader" "0.2.1"
     "@braintree/browser-detection" "1.7.0"
     "@braintree/class-list" "0.1.0"
     "@braintree/iframer" "1.0.3"
-    "@braintree/sanitize-url" "3.0.0"
+    "@braintree/sanitize-url" "3.1.0"
     "@braintree/wrap-promise" "1.1.1"
     card-validator "6.1.0"
     credit-card-type "8.2.0"
