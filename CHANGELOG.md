@@ -1,3 +1,7 @@
+## v1.0.10 (2019-07-20)
+
+- Upgrade dependencies
+
 ## v1.0.9 (2019-07-10)
 
 - Upgrade dependencies
