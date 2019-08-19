@@ -859,9 +859,10 @@
   dependencies:
     promise-polyfill "^8.1.0"
 
-"@braintree/browser-detection@1.7.0", "@braintree/browser-detection@^1.5.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@braintree/browser-detection/-/browser-detection-1.7.0.tgz#895ba64b700c3f36cab5c54591caf71a41171dd8"
+"@braintree/browser-detection@1.8.0", "@braintree/browser-detection@^1.8.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@braintree/browser-detection/-/browser-detection-1.8.0.tgz#938a8553f43d832dbd0c896210f0aa73947ec241"
+  integrity sha512-NDu5QsxeviAEa+X/yU5/905T/wKYHnhkhyil8gOyIBW7WRaQBSgPwXlb0GO3UxtUQ+JN6hG3jfr3xeVx3FRRTw==
 
 "@braintree/class-list@0.1.0":
   version "0.1.0"
@@ -1362,25 +1363,25 @@ braces@^2.3.0, braces@^2.3.1:
     to-regex "^3.0.1"
 
 braintree-web-drop-in@^1.19.0:
-  version "1.19.0"
-  resolved "https://registry.yarnpkg.com/braintree-web-drop-in/-/braintree-web-drop-in-1.19.0.tgz#d664e8629222fdaf5bcc6fe9d529c92ea54d8f09"
-  integrity sha512-im+C5aOGVAhn/XUw7rRxAZ7092O3cyNBzFNgYl5D52cVuTOO3clCiUQeONmFDNJWwblHPm6kd5bJb6xzwaQ2jg==
+  version "1.20.0"
+  resolved "https://registry.yarnpkg.com/braintree-web-drop-in/-/braintree-web-drop-in-1.20.0.tgz#8e02cba5d13a392e81a3b0249aa5d69d56b2fad3"
+  integrity sha512-SE6ZQuQ2JmFwlU80Qrt1dC+Bl1W1lpalCOJv3663kA8s2IQF4NoyyGAOLHnpheY5mh60oESOU0BFr18SeyKVKQ==
   dependencies:
     "@braintree/asset-loader" "0.3.1"
-    "@braintree/browser-detection" "1.7.0"
+    "@braintree/browser-detection" "1.8.0"
     "@braintree/class-list" "0.1.0"
     "@braintree/event-emitter" "0.2.0"
     "@braintree/wrap-promise" "2.0.0"
-    braintree-web "3.47.0"
+    braintree-web "3.50.1"
     promise-polyfill "8.1.3"
 
-braintree-web@3.47.0:
-  version "3.47.0"
-  resolved "https://registry.yarnpkg.com/braintree-web/-/braintree-web-3.47.0.tgz#2fa5864763860b7fdfb38c288a2c70dcf9cfbfd8"
-  integrity sha512-W5QAJXf6Q0lzPWtTzY7XLFEHTZu85RWQaUWQHpnTJO4s/SGS8q6kJ7bvqEO+eCI1XgNH7IQACC0kk9TpVY2IyQ==
+braintree-web@3.50.1:
+  version "3.50.1"
+  resolved "https://registry.yarnpkg.com/braintree-web/-/braintree-web-3.50.1.tgz#e67a9dcd94b5c1f3906abee321ff8c9402e70787"
+  integrity sha512-J9OTmxzBCmJWVxrqIMTjejRLnssbdTVgaick9G6r/ESjdBrmOJVgAL1xGA4I1bC7eRR22w7G9rbgCf1xZ6dcaA==
   dependencies:
     "@braintree/asset-loader" "0.3.1"
-    "@braintree/browser-detection" "1.7.0"
+    "@braintree/browser-detection" "1.8.0"
     "@braintree/class-list" "0.1.0"
     "@braintree/event-emitter" "0.2.0"
     "@braintree/iframer" "1.0.3"
@@ -1391,7 +1392,7 @@ braintree-web@3.47.0:
     framebus "3.0.2"
     inject-stylesheet "2.0.0"
     promise-polyfill "8.1.3"
-    restricted-input "2.0.1"
+    restricted-input "2.0.2"
 
 browser-process-hrtime@^0.1.2:
   version "0.1.3"
@@ -3838,12 +3839,12 @@ resolve@^1.10.0, resolve@^1.3.2, resolve@^1.8.1:
   dependencies:
     path-parse "^1.0.6"
 
-restricted-input@2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/restricted-input/-/restricted-input-2.0.1.tgz#1cc6919f39f2b707cd553db947856a681e35ad36"
-  integrity sha512-pmthWjcDpHlbMoLcJjsGeftAaEJl89uKLYaaAsGnRshXCx7/A3oPGzyqNCcsWfmk/qvOvDOtrI44VG1tcJkDjg==
+restricted-input@2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/restricted-input/-/restricted-input-2.0.2.tgz#b0c170414c5c7329a6e66d45d3675ab85d554495"
+  integrity sha512-SER1EIVnefoHM8fu7SqNeCfB9nphfD0q45s0iUv2zy5soKiB4knCmFziEmpa9aunmW4A9V1Bszx6AK03/HMVYQ==
   dependencies:
-    "@braintree/browser-detection" "^1.5.0"
+    "@braintree/browser-detection" "^1.8.0"
 
 ret@~0.1.10:
   version "0.1.15"
