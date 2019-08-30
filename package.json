@@ -49,5 +49,5 @@
     "react": ">=16.0.0",
     "react-dom": ">=16.0.0"
   },
-  "types": "index"
+  "types": "index.d.ts"
 }
