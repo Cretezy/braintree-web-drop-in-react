@@ -35,6 +35,7 @@
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "@babel/runtime": "^7.5.5",
+    "@types/braintree-web-drop-in": "^1.18.0",
     "babel-jest": "^24.8.0",
     "jest": "^24.8.0",
     "prettier": "^1.18.2",
@@ -47,5 +48,6 @@
   "peerDependencies": {
     "react": ">=16.0.0",
     "react-dom": ">=16.0.0"
-  }
+  },
+  "typings": "index"
 }
