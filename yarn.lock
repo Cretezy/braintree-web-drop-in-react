@@ -859,20 +859,20 @@
   dependencies:
     promise-polyfill "^8.1.0"
 
-"@braintree/browser-detection@1.8.0", "@braintree/browser-detection@^1.8.0":
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@braintree/browser-detection/-/browser-detection-1.8.0.tgz#938a8553f43d832dbd0c896210f0aa73947ec241"
-  integrity sha512-NDu5QsxeviAEa+X/yU5/905T/wKYHnhkhyil8gOyIBW7WRaQBSgPwXlb0GO3UxtUQ+JN6hG3jfr3xeVx3FRRTw==
+"@braintree/browser-detection@1.9.0", "@braintree/browser-detection@^1.8.0":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@braintree/browser-detection/-/browser-detection-1.9.0.tgz#bbaca6965a0685d0d91fd6e9194db034857d1d46"
+  integrity sha512-EEj6I9vRuxfvWRo4se5b13BP2nBVOJS9qoMKjFLJAMW+84/xgCaN6pYbZH8G6rDXhPUdkzqUPEGB3n+VdNFjTQ==
 
 "@braintree/class-list@0.1.0":
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@braintree/class-list/-/class-list-0.1.0.tgz#d6c8606ce6a82b4b37f28e32eadd090abcf1adaa"
   integrity sha512-AmXPsYhiNJKcxuwkgQjwyyTwFCeRlyFTeUJ9ecV/jLxS8ZH8fCAB4enYgArMRyvCekZZkqLK54kOJ6+OJBzJwA==
 
-"@braintree/event-emitter@0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@braintree/event-emitter/-/event-emitter-0.2.0.tgz#d378d8a78ffeac4ccdfca478c1b343930f86523d"
-  integrity sha512-uAJqQWymOKTPYnL+RHm/UI0wfIPdZvCpL54i6WYfz9vtQgS21fKcM5PAKNeQRuPFvU6GD1EavdPBiDiHqdDs6w==
+"@braintree/event-emitter@0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@braintree/event-emitter/-/event-emitter-0.3.0.tgz#8239ad51c71707b317f30da2d29abb369f91a579"
+  integrity sha512-yzC81QgTuL18RK9Da4C5oAyta5OLNZ3mGqiGKZFc8BKxOnGJN5ObhiFiOdbMbvPUYJQ4teZsal7j00o5RFlGcQ==
 
 "@braintree/iframer@1.0.3":
   version "1.0.3"
@@ -1390,32 +1390,32 @@ braces@^2.3.0, braces@^2.3.1:
     to-regex "^3.0.1"
 
 braintree-web-drop-in@^1.19.0:
-  version "1.20.0"
-  resolved "https://registry.yarnpkg.com/braintree-web-drop-in/-/braintree-web-drop-in-1.20.0.tgz#8e02cba5d13a392e81a3b0249aa5d69d56b2fad3"
-  integrity sha512-SE6ZQuQ2JmFwlU80Qrt1dC+Bl1W1lpalCOJv3663kA8s2IQF4NoyyGAOLHnpheY5mh60oESOU0BFr18SeyKVKQ==
+  version "1.20.2"
+  resolved "https://registry.yarnpkg.com/braintree-web-drop-in/-/braintree-web-drop-in-1.20.2.tgz#87402ab4e1871386dd127373750af6b2eb98d898"
+  integrity sha512-xPMvtnvUIMaX2DDWCGT2UJEWMoi1v+88u2G78bqYoDs8p/yQdY740h8j/TGIkloEedfOxGl7CrfTlz7m4HsTZw==
   dependencies:
     "@braintree/asset-loader" "0.3.1"
-    "@braintree/browser-detection" "1.8.0"
+    "@braintree/browser-detection" "1.9.0"
     "@braintree/class-list" "0.1.0"
-    "@braintree/event-emitter" "0.2.0"
+    "@braintree/event-emitter" "0.3.0"
     "@braintree/wrap-promise" "2.0.0"
-    braintree-web "3.50.1"
+    braintree-web "3.53.0"
     promise-polyfill "8.1.3"
 
-braintree-web@3.50.1:
-  version "3.50.1"
-  resolved "https://registry.yarnpkg.com/braintree-web/-/braintree-web-3.50.1.tgz#e67a9dcd94b5c1f3906abee321ff8c9402e70787"
-  integrity sha512-J9OTmxzBCmJWVxrqIMTjejRLnssbdTVgaick9G6r/ESjdBrmOJVgAL1xGA4I1bC7eRR22w7G9rbgCf1xZ6dcaA==
+braintree-web@3.53.0:
+  version "3.53.0"
+  resolved "https://registry.yarnpkg.com/braintree-web/-/braintree-web-3.53.0.tgz#eae9fa013688d6e2e28b76dfd4617d4b8f22bad9"
+  integrity sha512-ySaWtY/jMWW/0tGvptMypiNN3XxLdScJKKLgS3TcqwoTvhQbaGRMBriHEiJJnxXuh+JMhm7dL3ihkE5wvWbKUA==
   dependencies:
     "@braintree/asset-loader" "0.3.1"
-    "@braintree/browser-detection" "1.8.0"
+    "@braintree/browser-detection" "1.9.0"
     "@braintree/class-list" "0.1.0"
-    "@braintree/event-emitter" "0.2.0"
+    "@braintree/event-emitter" "0.3.0"
     "@braintree/iframer" "1.0.3"
     "@braintree/sanitize-url" "3.1.0"
     "@braintree/wrap-promise" "2.0.0"
     card-validator "6.2.0"
-    credit-card-type "8.2.0"
+    credit-card-type "8.3.0"
     framebus "3.0.2"
     inject-stylesheet "2.0.0"
     promise-polyfill "8.1.3"
@@ -1636,7 +1636,12 @@ core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
 
-credit-card-type@8.2.0, credit-card-type@^8.0.0:
+credit-card-type@8.3.0:
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/credit-card-type/-/credit-card-type-8.3.0.tgz#f93c187c9362411544158c91d552efcc443aa87a"
+  integrity sha512-czfZUpQ7W9CDxZL4yFLb1kFtM/q2lTOY975hL2aO+DC8+GRNDVSXVCHXhVFZPxiUKmQCZbFP8vIhxx5TBQaThw==
+
+credit-card-type@^8.0.0:
   version "8.2.0"
   resolved "https://registry.yarnpkg.com/credit-card-type/-/credit-card-type-8.2.0.tgz#507a43b257f0f3b8bd4d4b339a419741fc7e6236"
   integrity sha512-+1kZKW717eDTbZ1/EjkEi4+UrD2SygU2Iujn/VlrMHXloGW/y5GqPlQ/KgT4gaoDmWyufBfm/CAzNkpeccfMtA==
