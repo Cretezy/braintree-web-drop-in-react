@@ -1,3 +1,8 @@
+## v1.1.0 (2019-10-07)
+
+- Add TypeScript typings (thanks @paulinfrancis!)
+- Fix `preselectVaultedPaymentMethod` not being used
+
 ## v1.0.11 (2019-10-07)
 
 - Upgrade dependencies

@@ -1,6 +1,6 @@
 {
   "name": "braintree-web-drop-in-react",
-  "version": "1.0.11",
+  "version": "1.1.0",
   "description": "React component for Braintree Web Drop-In (v3)",
   "keywords": [
     "braintree",
@@ -18,12 +18,13 @@
     "lib/*"
   ],
   "main": "lib/index.js",
+  "types": "index.d.ts",
   "scripts": {
     "build": "babel src -d lib --source-maps && terser lib/index.js -o lib/index.min.js --source-map 'content=lib/index.js.map'",
     "clean": "rimraf lib",
+    "example": "cd example && npm install && npm run start",
     "format": "prettier --write 'src/**.js' package.json CHANGELOG.md README.md .travis.yml example/index.html example/index.js example/README.md example/package.json",
-    "test": "jest",
-    "example": "cd example && npm install && npm run start"
+    "test": "jest"
   },
   "dependencies": {
     "braintree-web-drop-in": "^1.20.2",
@@ -37,6 +38,8 @@
     "@babel/preset-env": "^7.6.2",
     "@babel/preset-react": "^7.0.0",
     "@babel/runtime": "^7.6.2",
+    "@types/braintree-web-drop-in": "^1.18.0",
+    "@types/react": "^16.9.5",
     "babel-jest": "^24.9.0",
     "jest": "^24.9.0",
     "prettier": "^1.18.2",

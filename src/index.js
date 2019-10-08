@@ -25,6 +25,7 @@ export default class DropIn extends React.Component {
   async componentDidMount() {
     this.instance = await BraintreeWebDropIn.create({
       container: ReactDOM.findDOMNode(this.wrapper),
+      preselectVaultedPaymentMethod: this.props.preselectVaultedPaymentMethod,
       ...this.props.options
     });
 
