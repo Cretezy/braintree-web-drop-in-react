@@ -1,0 +1,16 @@
+on: push
+name: Build & Test
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Build
+      uses: nuxt/actions-yarn@master
+      with:
+        args: install
+    - name: Test
+      uses: nuxt/actions-yarn@master
+      with:
+        args: test
