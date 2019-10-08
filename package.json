@@ -1,6 +1,6 @@
 {
   "name": "braintree-web-drop-in-react",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "React component for Braintree Web Drop-In (v3)",
   "keywords": [
     "braintree",
@@ -14,7 +14,9 @@
   },
   "license": "MIT",
   "author": "Charles Crete <charles@cretezy.com>",
-  "files": ["lib/*"],
+  "files": [
+    "lib/*"
+  ],
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src -d lib --source-maps && terser lib/index.js -o lib/index.min.js --source-map 'content=lib/index.js.map'",
@@ -24,28 +26,28 @@
     "example": "cd example && npm install && npm run start"
   },
   "dependencies": {
-    "braintree-web-drop-in": "^1.19.0",
+    "braintree-web-drop-in": "^1.20.2",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@babel/cli": "^7.5.5",
-    "@babel/core": "^7.5.5",
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "@babel/plugin-transform-runtime": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
     "@babel/preset-react": "^7.0.0",
-    "@babel/runtime": "^7.5.5",
-    "babel-jest": "^24.8.0",
-    "jest": "^24.8.0",
+    "@babel/runtime": "^7.6.2",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
     "prettier": "^1.18.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-test-renderer": "^16.8.6",
+    "react-test-renderer": "^16.10.2",
     "rimraf": "^3.0.0",
-    "terser": "^4.1.2"
+    "terser": "^4.3.8"
   },
   "peerDependencies": {
-    "react": ">=16.0.0",
-    "react-dom": ">=16.0.0"
+    "react": ">=16.10.2",
+    "react-dom": ">=16.10.2"
   }
 }
