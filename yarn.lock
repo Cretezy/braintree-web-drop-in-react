@@ -1298,22 +1298,22 @@ braces@^2.3.1, braces@^2.3.2:
     to-regex "^3.0.1"
 
 braintree-web-drop-in@^1.20.2:
-  version "1.20.2"
-  resolved "https://registry.yarnpkg.com/braintree-web-drop-in/-/braintree-web-drop-in-1.20.2.tgz#87402ab4e1871386dd127373750af6b2eb98d898"
-  integrity sha512-xPMvtnvUIMaX2DDWCGT2UJEWMoi1v+88u2G78bqYoDs8p/yQdY740h8j/TGIkloEedfOxGl7CrfTlz7m4HsTZw==
+  version "1.20.3"
+  resolved "https://registry.yarnpkg.com/braintree-web-drop-in/-/braintree-web-drop-in-1.20.3.tgz#152da606624fedc058e6414a3adfc000e6cef8e3"
+  integrity sha512-wbe83QLRN2p01qHhDMYq+w9sapacUBUQe5P8HMXFOC/DWhe6ryVaLQFU/c9FRybi29RR46EzwY0Zl+z+ajU0Mg==
   dependencies:
     "@braintree/asset-loader" "0.3.1"
     "@braintree/browser-detection" "1.9.0"
     "@braintree/class-list" "0.1.0"
     "@braintree/event-emitter" "0.3.0"
     "@braintree/wrap-promise" "2.0.0"
-    braintree-web "3.53.0"
+    braintree-web "3.54.0"
     promise-polyfill "8.1.3"
 
-braintree-web@3.53.0:
-  version "3.53.0"
-  resolved "https://registry.yarnpkg.com/braintree-web/-/braintree-web-3.53.0.tgz#eae9fa013688d6e2e28b76dfd4617d4b8f22bad9"
-  integrity sha512-ySaWtY/jMWW/0tGvptMypiNN3XxLdScJKKLgS3TcqwoTvhQbaGRMBriHEiJJnxXuh+JMhm7dL3ihkE5wvWbKUA==
+braintree-web@3.54.0:
+  version "3.54.0"
+  resolved "https://registry.yarnpkg.com/braintree-web/-/braintree-web-3.54.0.tgz#5ae62ac2593389d4ceb93ddd0a9003050dfebdf1"
+  integrity sha512-tkpZQLag5rE15RuO/tl+TF+FrxgpUcpoGyEuKkxOafQG2q6Nq/owv2fITW70zWnph8X8li465KLSv3hyfy7qlQ==
   dependencies:
     "@braintree/asset-loader" "0.3.1"
     "@braintree/browser-detection" "1.9.0"
