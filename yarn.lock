@@ -841,6 +841,11 @@
   resolved "https://registry.yarnpkg.com/@braintree/event-emitter/-/event-emitter-0.3.0.tgz#8239ad51c71707b317f30da2d29abb369f91a579"
   integrity sha512-yzC81QgTuL18RK9Da4C5oAyta5OLNZ3mGqiGKZFc8BKxOnGJN5ObhiFiOdbMbvPUYJQ4teZsal7j00o5RFlGcQ==
 
+"@braintree/extended-promise@0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@braintree/extended-promise/-/extended-promise-0.2.1.tgz#e2f35a7478067bc0413a6760aa65725ec7566996"
+  integrity sha512-nMChESCMKdmAemkuCOe3K0rvjg5fChLOj2hhogVBkPdBxwzYU5gLL+iMlnn4Wuv0P8Az003ixVPBlJC+4kgqIg==
+
 "@braintree/iframer@1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@braintree/iframer/-/iframer-1.0.3.tgz#21dd1fd4cebd4154aeab1efa4d5b0d5f4384364e"
@@ -1368,27 +1373,28 @@ braces@^2.3.1, braces@^2.3.2:
     to-regex "^3.0.1"
 
 braintree-web-drop-in@^1.20.2:
-  version "1.21.0"
-  resolved "https://registry.yarnpkg.com/braintree-web-drop-in/-/braintree-web-drop-in-1.21.0.tgz#327e88035a190067f60a192bb7720687480d87af"
-  integrity sha512-sy7Hf3F63YHj7GFpoG327j37CHY5DTjig7hkNIpwAzBURqOIz2RIXzTx/pV6mYhfiTZokVa6BhuWVA/KdZl44g==
+  version "1.22.0"
+  resolved "https://registry.yarnpkg.com/braintree-web-drop-in/-/braintree-web-drop-in-1.22.0.tgz#6e7fd8dff85f1c7e7abc00904b3d2047914dd3cb"
+  integrity sha512-32CxtiQJli9EyY1Z7Pb/sNKoqDtGPFWSSPO0PHzxLFWhZJWy4cKlECb4Pvtnzy885kZIiheBEaQQfmuVBdGyaQ==
   dependencies:
     "@braintree/asset-loader" "0.3.1"
     "@braintree/browser-detection" "1.9.0"
     "@braintree/class-list" "0.1.0"
     "@braintree/event-emitter" "0.3.0"
     "@braintree/wrap-promise" "2.0.0"
-    braintree-web "3.55.0"
+    braintree-web "3.57.0"
     promise-polyfill "8.1.3"
 
-braintree-web@3.55.0:
-  version "3.55.0"
-  resolved "https://registry.yarnpkg.com/braintree-web/-/braintree-web-3.55.0.tgz#5a7e2145794b6ac40d606c4179d6ce4d2e2da92f"
-  integrity sha512-l6h0l60Su3If/CrUdyiFbihsydTIbV/l5btduxovhDS8tKCr7GnpB+BUWcDoMFT/hUVg1GDa+WhskTN+e0iJIw==
+braintree-web@3.57.0:
+  version "3.57.0"
+  resolved "https://registry.yarnpkg.com/braintree-web/-/braintree-web-3.57.0.tgz#f7935fffcd7ca9bb51f0afeb0a1eb329e8a1f3b2"
+  integrity sha512-FjrpCCe8sKfF7fyOx73qexonAv5ZOGPm4UN5qqPy7QjKA5e7kZWQjt1cpk6wha5aOeEegdt9NwChWYyguemkgw==
   dependencies:
     "@braintree/asset-loader" "0.3.1"
     "@braintree/browser-detection" "1.9.0"
     "@braintree/class-list" "0.1.0"
     "@braintree/event-emitter" "0.3.0"
+    "@braintree/extended-promise" "0.2.1"
     "@braintree/iframer" "1.0.3"
     "@braintree/sanitize-url" "4.0.0"
     "@braintree/wrap-promise" "2.0.0"
