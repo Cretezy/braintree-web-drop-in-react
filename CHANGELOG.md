@@ -1,3 +1,7 @@
+## Unrelease
+
+- Upgrade dependencies
+
 ## v1.1.0 (2019-10-07)
 
 - Add TypeScript typings (thanks @paulinfrancis!)
