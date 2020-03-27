@@ -15,7 +15,8 @@
   "license": "MIT",
   "author": "Charles Crete <charles@cretezy.com>",
   "files": [
-    "lib/*"
+    "lib/*",
+    "index.d.ts"
   ],
   "main": "lib/index.js",
   "types": "index.d.ts",
