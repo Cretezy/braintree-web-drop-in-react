@@ -1,6 +1,7 @@
-## Unrelease
+## v1.1.1 (2020-04-01)
 
 - Upgrade dependencies
+- Include typings
 
 ## v1.1.0 (2019-10-07)
 

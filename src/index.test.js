@@ -15,11 +15,11 @@ describe("DropIn", () => {
     expect(passedArgs[0].authorization).toEqual("bogus");
   });
 
-  it("Calls teardown on destruction", done => {
+  it("Calls teardown on destruction", (done) => {
     const braintreeWebDropIn = require("braintree-web-drop-in");
     const teardownMock = jest.fn();
     braintreeWebDropIn.create = () =>
-      new Promise(resolve => {
+      new Promise((resolve) => {
         resolve({ teardown: teardownMock });
       });
 

@@ -12,11 +12,11 @@ export default class DropIn extends React.Component {
     onInstance: PropTypes.func,
     onNoPaymentMethodRequestable: PropTypes.func,
     onPaymentMethodRequestable: PropTypes.func,
-    onPaymentOptionSelected: PropTypes.func
+    onPaymentOptionSelected: PropTypes.func,
   };
 
   static defaultProps = {
-    preselectVaultedPaymentMethod: true
+    preselectVaultedPaymentMethod: true,
   };
 
   wrapper;
@@ -26,7 +26,7 @@ export default class DropIn extends React.Component {
     this.instance = await BraintreeWebDropIn.create({
       container: ReactDOM.findDOMNode(this.wrapper),
       preselectVaultedPaymentMethod: this.props.preselectVaultedPaymentMethod,
-      ...this.props.options
+      ...this.props.options,
     });
 
     if (this.props.onNoPaymentMethodRequestable) {
@@ -65,6 +65,6 @@ export default class DropIn extends React.Component {
   }
 
   render() {
-    return <div ref={ref => (this.wrapper = ref)} />;
+    return <div ref={(ref) => (this.wrapper = ref)} />;
   }
 }

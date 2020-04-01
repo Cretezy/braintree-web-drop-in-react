@@ -33,7 +33,7 @@ class Store extends React.Component {
   instance;
 
   state = {
-    clientToken: null
+    clientToken: null,
   };
 
   async componentDidMount() {
@@ -42,7 +42,7 @@ class Store extends React.Component {
     const clientToken = await response.json(); // If returned as JSON string
 
     this.setState({
-      clientToken
+      clientToken,
     });
   }
 
@@ -64,7 +64,7 @@ class Store extends React.Component {
         <div>
           <DropIn
             options={{ authorization: this.state.clientToken }}
-            onInstance={instance => (this.instance = instance)}
+            onInstance={(instance) => (this.instance = instance)}
           />
           <button onClick={this.buy.bind(this)}>Buy</button>
         </div>
