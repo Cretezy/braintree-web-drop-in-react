@@ -3,7 +3,7 @@
     "start": "parcel index.html"
   },
   "dependencies": {
-    "braintree-web-drop-in-react": "file:..",
+    "braintree-web-drop-in-react": "^1.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
