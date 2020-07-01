@@ -41,7 +41,7 @@
     "@babel/runtime": "^7.9.2",
     "@types/braintree-web-drop-in": "^1.18.0",
     "@types/react": "^16.9.31",
-    "babel-jest": "^25.2.4",
+    "babel-jest": "^26.1.0",
     "jest": "^25.2.4",
     "prettier": "^2.0.2",
     "react": "^16.8.6",
