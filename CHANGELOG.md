@@ -1,3 +1,7 @@
+## v1.1.2 (2020-08-26)
+
+- Upgrade dependencies
+
 ## v1.1.1 (2020-04-01)
 
 - Upgrade dependencies
