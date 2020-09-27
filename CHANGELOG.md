@@ -1,4 +1,10 @@
+## v1.2.1 (2020-09-26)
+
+- Republish v1.2.0
+
 ## v1.2.0 (2020-09-26)
+
+> Please use v1.2.1! Forgot to build before publishing.
 
 - Add `onError` prop
 - Add missing typings for extra callbacks
