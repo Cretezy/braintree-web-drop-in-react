@@ -1,3 +1,11 @@
+## v1.2.0 (2020-09-26)
+
+- Add `onError` prop
+- Add missing typings for extra callbacks
+- Fix callbacks reference changes
+- Deprecated `preselectVaultedPaymentMethod` prop (simply put in `options`)
+- Upgrade dependencies
+
 ## v1.1.2 (2020-08-26)
 
 - Upgrade dependencies

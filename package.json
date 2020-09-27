@@ -1,6 +1,6 @@
 {
   "name": "braintree-web-drop-in-react",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "React component for Braintree Web Drop-In (v3)",
   "keywords": [
     "braintree",
@@ -24,31 +24,31 @@
     "build": "babel src -d lib --source-maps && terser lib/index.js -o lib/index.min.js --source-map 'content=lib/index.js.map'",
     "clean": "rimraf lib",
     "example": "cd example && npm install && npm run start",
-    "format": "prettier --write 'src/**.js' package.json CHANGELOG.md README.md .travis.yml example/index.html example/index.js example/README.md example/package.json",
+    "format": "prettier --write 'src/**.js' index.d.ts package.json CHANGELOG.md README.md .travis.yml example/index.html example/index.js example/README.md example/package.json",
     "test": "jest"
   },
   "dependencies": {
-    "braintree-web-drop-in": "^1.23.0",
+    "braintree-web-drop-in": "^1.24.0",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@babel/cli": "^7.10.5",
-    "@babel/core": "^7.11.4",
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
-    "@babel/plugin-transform-runtime": "^7.11.0",
-    "@babel/preset-env": "^7.11.0",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
     "@babel/runtime": "^7.11.2",
     "@types/braintree-web-drop-in": "^1.22.1",
-    "@types/react": "^16.9.47",
+    "@types/react": "^16.9.49",
     "babel-jest": "^26.3.0",
     "jest": "^26.4.2",
-    "prettier": "^2.1.1",
+    "prettier": "^2.1.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-test-renderer": "^16.13.1",
     "rimraf": "^3.0.2",
-    "terser": "^5.2.1"
+    "terser": "^5.3.2"
   },
   "peerDependencies": {
     "react": ">=16.13.1",

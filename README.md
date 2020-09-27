@@ -85,7 +85,7 @@ See [`example`](example/README.md).
 Options to setup Braintree.
 See [Drop-In options](https://braintree.github.io/braintree-web-drop-in/docs/current/module-braintree-web-drop-in.html#.create).
 
-### `onInstance` (`function: instance`)
+### `onInstance` (`function: instance`, optional)
 
 Called with the Braintree Drop-In instance when done initializing.
 You can call all regular [Drop-In methods](https://braintree.github.io/braintree-web-drop-in/docs/current/Dropin.html)
@@ -119,7 +119,13 @@ Modify your configuration initially set in `options`. Can be used for any paypal
 
 If updateConfiguration is called after a user completes the PayPal authorization flow, any PayPal accounts not stored in the Vault record will be removed.
 
-### `onNoPaymentMethodRequestable`, `onPaymentMethodRequestable`, `onPaymentOptionSelected` (`function: event`)
+### `onError` (`function: error`, optional)
+
+Called when creating the instance throws an error.
+
+> Note: This doesn't propage up to React's error bounderies. If this is the desired behavior, rethrow the error inside your `onError` handler
+
+### `onNoPaymentMethodRequestable`, `onPaymentMethodRequestable`, `onPaymentOptionSelected` (`function: void/payload`, optional)
 
 Ran for [events](https://braintree.github.io/braintree-web-drop-in/docs/current/Dropin.html#on).
 
@@ -129,8 +135,10 @@ Ran for [events](https://braintree.github.io/braintree-web-drop-in/docs/current/
 
 ### `preselectVaultedPaymentMethod` (`boolean`, default: `true`)
 
-Whether or not to initialize with a vaulted payment method pre-selected.
+Whether to initialize with a vaulted payment method pre-selected.
 Only applicable when using a client token with a customer with saved payment methods.
+
+> Note: This prop is deprecated and will be removed in v2. Simply place this prop inside your `options` instead.
 
 ## Package size
 

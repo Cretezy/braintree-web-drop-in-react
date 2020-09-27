@@ -8,8 +8,12 @@ export default class DropIn extends React.Component {
 
   static propTypes = {
     options: PropTypes.object.isRequired,
+    // @deprecated: Include inside options
     preselectVaultedPaymentMethod: PropTypes.bool,
+
     onInstance: PropTypes.func,
+    onError: PropTypes.func,
+
     onNoPaymentMethodRequestable: PropTypes.func,
     onPaymentMethodRequestable: PropTypes.func,
     onPaymentOptionSelected: PropTypes.func,
@@ -23,33 +27,36 @@ export default class DropIn extends React.Component {
   instance;
 
   async componentDidMount() {
-    this.instance = await BraintreeWebDropIn.create({
-      container: ReactDOM.findDOMNode(this.wrapper),
-      preselectVaultedPaymentMethod: this.props.preselectVaultedPaymentMethod,
-      ...this.props.options,
-    });
+    try {
+      this.instance = await BraintreeWebDropIn.create({
+        container: ReactDOM.findDOMNode(this.wrapper),
+        preselectVaultedPaymentMethod: this.props.preselectVaultedPaymentMethod,
+        ...this.props.options,
+      });
 
-    if (this.props.onNoPaymentMethodRequestable) {
-      this.instance.on(
-        "noPaymentMethodRequestable",
-        this.props.onNoPaymentMethodRequestable
-      );
-    }
-    if (this.props.onPaymentMethodRequestable) {
-      this.instance.on(
-        "paymentMethodRequestable",
-        this.props.onPaymentMethodRequestable
-      );
-    }
-    if (this.props.onPaymentOptionSelected) {
-      this.instance.on(
-        "paymentOptionSelected",
-        this.props.onPaymentOptionSelected
-      );
-    }
+      this.instance.on("noPaymentMethodRequestable", (...args) => {
+        if (this.props.onNoPaymentMethodRequestable) {
+          this.props.onNoPaymentMethodRequestable(...args);
+        }
+      });
+      this.instance.on("paymentMethodRequestable", (...args) => {
+        if (this.props.onPaymentMethodRequestable) {
+          this.props.onPaymentMethodRequestable(...args);
+        }
+      });
+      this.instance.on("paymentOptionSelected", (...args) => {
+        if (this.props.onPaymentOptionSelected) {
+          this.props.onPaymentOptionSelected(...args);
+        }
+      });
 
-    if (this.props.onInstance) {
-      this.props.onInstance(this.instance);
+      if (this.props.onInstance) {
+        this.props.onInstance(this.instance);
+      }
+    } catch (error) {
+      if (this.props.onError) {
+        this.props.onError(error);
+      }
     }
   }
 
