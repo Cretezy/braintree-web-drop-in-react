@@ -1,3 +1,13 @@
+## v2.0.0 (unreleased)
+
+Planned:
+
+- Move from Babel to TypeScript native
+- Remove `preselectVaultedPaymentMethod` prop (should be placed in `options`)
+- Remove dependency on `braintree-web-drop-in` (move to peer dependency)
+- Remove `prop-types` dependency
+- Migrate to hook-based component
+
 ## v1.2.1 (2020-09-26)
 
 - Republish v1.2.0
