@@ -967,10 +967,10 @@
   dependencies:
     promise-polyfill "^8.1.3"
 
-"@braintree/browser-detection@1.10.0", "@braintree/browser-detection@^1.10.0":
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/@braintree/browser-detection/-/browser-detection-1.10.0.tgz#065c63e526e874b28d9957423be04b7788fd68ee"
-  integrity sha512-79maqUyksx4LFK4/7KVLgegHHGry363KfaoXtK4WAhoCjmxKbJsnjX7Yp1GSmK+FVcahaQfkFbO0K927UeAE+w==
+"@braintree/browser-detection@1.11.0", "@braintree/browser-detection@^1.10.0":
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/@braintree/browser-detection/-/browser-detection-1.11.0.tgz#89670624b7287b058575fc7e345fcd145029b6f0"
+  integrity sha512-A6G4DDygjLskhJkQvb6sURWSqL2sCkjKgnL6Pi2ZhiqOffiyyETmUpUSquCGthD8BKLGqVPpwHT4t883B9iZxw==
 
 "@braintree/class-list@0.2.0":
   version "0.2.0"
@@ -982,22 +982,22 @@
   resolved "https://registry.yarnpkg.com/@braintree/event-emitter/-/event-emitter-0.4.1.tgz#204eaad8cf84eb7bf81fb288a359d34eda85a396"
   integrity sha512-X41357O3OXUDlnwMvS1m0GQEn3zB3s3flOBeg2J5OBvLvdJEIAVpPkblABPtsPrlciDSvfv1aSG5ixHPgFH0Zg==
 
-"@braintree/extended-promise@0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@braintree/extended-promise/-/extended-promise-0.4.0.tgz#7c14bce7f32f451a4a10265159cd8b3a817cd051"
-  integrity sha512-WHm6m6SS0QPJ3fKTKBBzWN9VaozT1D+cj6oQLo+N/oncqFec7Bk1KDIK+u6KQtkCEgo1Gd/JCOmZ9uUeWahAzA==
+"@braintree/extended-promise@0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@braintree/extended-promise/-/extended-promise-0.4.1.tgz#b44f8e6236ddb43434be11924f00fa69f8782a36"
+  integrity sha512-00n7m4z+swWHoFQLHLvrIBIEoxnGUBsl3ogvX79ITpcn8CHczDwtxYy5+RhMoAraRdfN3oB+8QIpN3KOxs2Q7w==
 
 "@braintree/iframer@1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@braintree/iframer/-/iframer-1.1.0.tgz#7e59b975c2a48bd92616f653367a5214fc2ddd4b"
   integrity sha512-tVpr7U6u6bqeQlHreEjYMNtnHX62vLnNWziY2kQLqkWhvusPuY5DfuGEIPpWqsd+V/a1slyTQaxK6HWTlH6A/Q==
 
-"@braintree/sanitize-url@4.1.1":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@braintree/sanitize-url/-/sanitize-url-4.1.1.tgz#671b3cfdbcc40d1449036ce586e882ab6150828e"
-  integrity sha512-epVksusKVEpwBs2vRg3SWssxn9KXs9CxEYNOcgeSRLRjq070ABj5bLPxkmtQpVeSPCHj8kfAE9J6z2WsLr4wZg==
+"@braintree/sanitize-url@5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@braintree/sanitize-url/-/sanitize-url-5.0.0.tgz#3ba791f37b90e7f6170d252b63aacfcae943c039"
+  integrity sha512-WmKrB/575EJCzbeSJR3YQ5sET5FaizeljLRw1382qVUeGqzuWBgIS+AF5a0FO51uQTrDpoRgvuHC2IWVsgwkkA==
 
-"@braintree/uuid@0.1.0":
+"@braintree/uuid@0.1.0", "@braintree/uuid@^0.1.0":
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@braintree/uuid/-/uuid-0.1.0.tgz#ab9355015a7fb0e25cf3c2ff9cd32ece8ea304b0"
   integrity sha512-YvZJdlNcK5EnR+7M8AjgEAf4Qx696+FOSYlPfy5ePn80vODtVAUU0FxHnzKZC0og1VbDNQDDiwhthR65D4Na0g==
@@ -1611,38 +1611,38 @@ braces@^3.0.1:
     fill-range "^7.0.1"
 
 braintree-web-drop-in@^1.24.0:
-  version "1.24.0"
-  resolved "https://registry.yarnpkg.com/braintree-web-drop-in/-/braintree-web-drop-in-1.24.0.tgz#884c8e52decb633460ada6a326ab0e516a9bdb81"
-  integrity sha512-f4sedu5n1VpbkR+R5mDvSy4k3vWfZe1RTdQYaBsba9oY6+HxyoSigETOdQ+KcZSQnh6uopP1NYFPWoZwJ/rqTg==
+  version "1.26.0"
+  resolved "https://registry.yarnpkg.com/braintree-web-drop-in/-/braintree-web-drop-in-1.26.0.tgz#367ee41aff1241687185d49801e7b47ff92b7afa"
+  integrity sha512-X2AreNcbBOzjUY99rU0P8Rl6PSV1UhzVJ8wP38B8yid6aHOAtcb6AwPH9FeK1934Le/nnsRWX6VTlsm3kOK4Qw==
   dependencies:
     "@braintree/asset-loader" "0.4.4"
-    "@braintree/browser-detection" "1.10.0"
+    "@braintree/browser-detection" "1.11.0"
     "@braintree/class-list" "0.2.0"
     "@braintree/event-emitter" "0.4.1"
     "@braintree/uuid" "0.1.0"
     "@braintree/wrap-promise" "2.1.0"
-    braintree-web "3.65.0"
-    promise-polyfill "8.1.3"
+    braintree-web "3.71.0"
+    promise-polyfill "8.2.0"
 
-braintree-web@3.65.0:
-  version "3.65.0"
-  resolved "https://registry.yarnpkg.com/braintree-web/-/braintree-web-3.65.0.tgz#3641e4ea553eeab1b986c7c64fda31e8396ed58a"
-  integrity sha512-xjFPJ/xAoF7tBlq4enGiQxk54YkGGi1U3XvMb4LGeK5RsLEq8Ey01wgAYARqTEqalIucLRyBFJn9Xprfm4lX8w==
+braintree-web@3.71.0:
+  version "3.71.0"
+  resolved "https://registry.yarnpkg.com/braintree-web/-/braintree-web-3.71.0.tgz#bf918b241414995ef7b2e7825d218933320b5e00"
+  integrity sha512-1HH5sR49khET+zia3A/JP8Jn+8OlAKo0ps7ambub15NY8To88oPZ9XXAL0Qi13aObWEU8NF3jvPyBmmI952GZg==
   dependencies:
     "@braintree/asset-loader" "0.4.4"
-    "@braintree/browser-detection" "1.10.0"
+    "@braintree/browser-detection" "1.11.0"
     "@braintree/class-list" "0.2.0"
     "@braintree/event-emitter" "0.4.1"
-    "@braintree/extended-promise" "0.4.0"
+    "@braintree/extended-promise" "0.4.1"
     "@braintree/iframer" "1.1.0"
-    "@braintree/sanitize-url" "4.1.1"
+    "@braintree/sanitize-url" "5.0.0"
     "@braintree/uuid" "0.1.0"
     "@braintree/wrap-promise" "2.1.0"
     card-validator "8.1.0"
-    credit-card-type "9.0.1"
-    framebus "4.0.2"
+    credit-card-type "9.1.0"
+    framebus "5.0.0"
     inject-stylesheet "4.0.0"
-    promise-polyfill "8.1.3"
+    promise-polyfill "8.2.0"
     restricted-input "3.0.3"
 
 browser-process-hrtime@^1.0.0:
@@ -1885,7 +1885,12 @@ core-util-is@1.0.2, core-util-is@~1.0.0:
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
   integrity sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
 
-credit-card-type@9.0.1, credit-card-type@^9.0.0:
+credit-card-type@9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/credit-card-type/-/credit-card-type-9.1.0.tgz#54dd96c93b6579623e9c8656e6798fc2b93f5f05"
+  integrity sha512-CpNFuLxiPFxuZqhSKml3M+t0K/484pMAnfYWH14JoD7OZMnmC0Lmo+P7JX9SobqFpRoo7ifA18kOHdxJywYPEA==
+
+credit-card-type@^9.0.0:
   version "9.0.1"
   resolved "https://registry.yarnpkg.com/credit-card-type/-/credit-card-type-9.0.1.tgz#b800ae4089ece5e9362626ff1bb44fb3bb8757ed"
   integrity sha512-GtJr+IyIUN67fRXJGIFTw192kgAAneqZ0DDpKKM78Nh32jwfcuTVzJRe3xioECPZybiKHGIHGsbXg//Hu6PKSQ==
@@ -2346,10 +2351,12 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-framebus@4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/framebus/-/framebus-4.0.2.tgz#adaf3827f9aab8849ad62f610d2c1e8bd14aec72"
-  integrity sha512-dgw5CLt70mRejHP5afc32/5MCN1Clx4EVqWlaUf1scRpsVWBHpD2nfGvn3uIRXoix16aG8XT6CM8I8P9BbhPEA==
+framebus@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/framebus/-/framebus-5.0.0.tgz#12cc44e18c3916701f49c58715ea4c219823b93c"
+  integrity sha512-UJZhlBzSg3vhcuiOoJVDlhcWHABfR8goZ7Nkc4DwVOkCoflrcnHTGfxFqPQSb48aXv5XiMTk/dEs5+fZj30QFw==
+  dependencies:
+    "@braintree/uuid" "^0.1.0"
 
 fs-readdir-recursive@^1.1.0:
   version "1.1.0"
@@ -3841,10 +3848,10 @@ process-nextick-args@~2.0.0:
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
   integrity sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
 
-promise-polyfill@8.1.3, promise-polyfill@^8.1.3:
-  version "8.1.3"
-  resolved "https://registry.yarnpkg.com/promise-polyfill/-/promise-polyfill-8.1.3.tgz#8c99b3cf53f3a91c68226ffde7bde81d7f904116"
-  integrity sha512-MG5r82wBzh7pSKDRa9y+vllNHz3e3d4CNj1PQE4BQYxLme0gKYYBm9YENq+UkEikyZ0XbiGWxYlVw3Rl9O/U8g==
+promise-polyfill@8.2.0, promise-polyfill@^8.1.3:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/promise-polyfill/-/promise-polyfill-8.2.0.tgz#367394726da7561457aba2133c9ceefbd6267da0"
+  integrity sha512-k/TC0mIcPVF6yHhUvwAp7cvL6I2fFV7TzF1DuGPI8mBh4QQazf36xCKEHKTZKRysEoTQoQdKyP25J8MPJp7j5g==
 
 prompts@^2.0.1:
   version "2.3.2"
