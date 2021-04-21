@@ -1,77 +1,85 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
 import BraintreeWebDropIn from "braintree-web-drop-in";
 
-export default class DropIn extends React.Component {
-  static displayName = "BraintreeWebDropIn";
 
-  static propTypes = {
-    options: PropTypes.object.isRequired,
-    // @deprecated: Include inside options
-    preselectVaultedPaymentMethod: PropTypes.bool,
+export default function DropIn({
+  options,
+  preselectVaultedPaymentMethod,
+  onInstance,
+  onError,
+  onNoPaymentMethodRequestable,
+  onPaymentMethodRequestable,
+  onPaymentOptionSelected
+}) {
+  const [wrapper, setWrapper] = useState();
+  const [instance, setInstance] = useState();
 
-    onInstance: PropTypes.func,
-    onError: PropTypes.func,
+  useEffect(() => {
+    (async () => {
+      if (!wrapper) return;
 
-    onNoPaymentMethodRequestable: PropTypes.func,
-    onPaymentMethodRequestable: PropTypes.func,
-    onPaymentOptionSelected: PropTypes.func,
-  };
+      try {
+        const instance = await BraintreeWebDropIn.create({
+          container: ReactDOM.findDOMNode(wrapper),
+          preselectVaultedPaymentMethod: preselectVaultedPaymentMethod,
+          ...options,
+        });
 
-  static defaultProps = {
-    preselectVaultedPaymentMethod: true,
-  };
+        instance.on("noPaymentMethodRequestable", (...args) => {
+          if (onNoPaymentMethodRequestable) {
+            onNoPaymentMethodRequestable(...args);
+          }
+        });
+        instance.on("paymentMethodRequestable", (...args) => {
+          if (onPaymentMethodRequestable) {
+            onPaymentMethodRequestable(...args);
+          }
+        });
+        instance.on("paymentOptionSelected", (...args) => {
+          if (onPaymentOptionSelected) {
+            onPaymentOptionSelected(...args);
+          }
+        });
 
-  wrapper;
-  instance;
-
-  async componentDidMount() {
-    try {
-      this.instance = await BraintreeWebDropIn.create({
-        container: ReactDOM.findDOMNode(this.wrapper),
-        preselectVaultedPaymentMethod: this.props.preselectVaultedPaymentMethod,
-        ...this.props.options,
-      });
-
-      this.instance.on("noPaymentMethodRequestable", (...args) => {
-        if (this.props.onNoPaymentMethodRequestable) {
-          this.props.onNoPaymentMethodRequestable(...args);
-        }
-      });
-      this.instance.on("paymentMethodRequestable", (...args) => {
-        if (this.props.onPaymentMethodRequestable) {
-          this.props.onPaymentMethodRequestable(...args);
-        }
-      });
-      this.instance.on("paymentOptionSelected", (...args) => {
-        if (this.props.onPaymentOptionSelected) {
-          this.props.onPaymentOptionSelected(...args);
-        }
-      });
-
-      if (this.props.onInstance) {
-        this.props.onInstance(this.instance);
+        setInstance(instance);
+      } catch (error) {
+        if (onError)
+          onError(error);
       }
-    } catch (error) {
-      if (this.props.onError) {
-        this.props.onError(error);
-      }
+    })();
+
+    return () => {
+      if (instance)
+        return instance.teardown();
     }
-  }
+  }, [wrapper]);
 
-  async componentWillUnmount() {
-    if (this.instance) {
-      await this.instance.teardown();
-    }
-  }
+  // Instance change listener
+  useEffect(() => {
+    if (instance)
+      onInstance(instance);
+  }, [instance]);
 
-  shouldComponentUpdate() {
-    // Static
-    return false;
-  }
+  return <div ref={setWrapper} />;
+}
 
-  render() {
-    return <div ref={(ref) => (this.wrapper = ref)} />;
-  }
+DropIn.displayName = "BraintreeWebDropIn";
+
+DropIn.propTypes = {
+  options: PropTypes.object.isRequired,
+  // @deprecated: Include inside options
+  preselectVaultedPaymentMethod: PropTypes.bool,
+
+  onInstance: PropTypes.func,
+  onError: PropTypes.func,
+
+  onNoPaymentMethodRequestable: PropTypes.func,
+  onPaymentMethodRequestable: PropTypes.func,
+  onPaymentOptionSelected: PropTypes.func,
+};
+
+DropIn.defaultProps = {
+  preselectVaultedPaymentMethod: true,
 }
