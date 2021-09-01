@@ -1501,47 +1501,52 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@braintree/asset-loader@0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@braintree/asset-loader/-/asset-loader-0.3.1.tgz#2ee703193fba9f479e674e76ac83f2ccfd6e7a9e"
-  integrity sha512-6Jkps+3iobSwMOqSXHUwIU39QARDFr0T6R/OcIAKX51SlZbc8q9VXl+lxjsDDnNF8cybXn07OGEypeNs9ZKJ6g==
+"@braintree/asset-loader@0.4.4":
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/@braintree/asset-loader/-/asset-loader-0.4.4.tgz#9a5eda24c3627bfd5c7f7483cd48f0e411dd2f09"
+  integrity sha512-uVhXC5dydmngmNVuDiKgfXSlz4kv4x5ytIJodI8N5SY16mRh13m/UmbQ7yH+o8DQqp50qPZ45MUHIZkXKPg85w==
   dependencies:
-    promise-polyfill "^8.1.0"
+    promise-polyfill "^8.1.3"
 
-"@braintree/browser-detection@1.9.0", "@braintree/browser-detection@^1.9.0":
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/@braintree/browser-detection/-/browser-detection-1.9.0.tgz#bbaca6965a0685d0d91fd6e9194db034857d1d46"
-  integrity sha512-EEj6I9vRuxfvWRo4se5b13BP2nBVOJS9qoMKjFLJAMW+84/xgCaN6pYbZH8G6rDXhPUdkzqUPEGB3n+VdNFjTQ==
+"@braintree/browser-detection@1.12.0", "@braintree/browser-detection@^1.12.0":
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/@braintree/browser-detection/-/browser-detection-1.12.0.tgz#f848b8a48e8ab34c7ff2dd420335973db190bf06"
+  integrity sha512-fmZcaXYkXr9b0J+3HwXLQogIYV+xSS6aBG7LGu0OjLkSD/k62EAu2xLGEDFHUu6siH/I7vvGoC0/Ds3f3RnS6g==
 
-"@braintree/class-list@0.1.0":
+"@braintree/class-list@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@braintree/class-list/-/class-list-0.2.0.tgz#4c4352ac19c262f61526f93d07d248244b399ec4"
+  integrity sha512-iLXJT51jnBFuGvyTAQqZ2uwyEVwdyapyz52F5MK1Uoh2ZOiPJ5hoqI0wncyCP2KfqrgyCpOkkEaLMLb/94unGA==
+
+"@braintree/event-emitter@0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@braintree/event-emitter/-/event-emitter-0.4.1.tgz#204eaad8cf84eb7bf81fb288a359d34eda85a396"
+  integrity sha512-X41357O3OXUDlnwMvS1m0GQEn3zB3s3flOBeg2J5OBvLvdJEIAVpPkblABPtsPrlciDSvfv1aSG5ixHPgFH0Zg==
+
+"@braintree/extended-promise@0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@braintree/extended-promise/-/extended-promise-0.4.1.tgz#b44f8e6236ddb43434be11924f00fa69f8782a36"
+  integrity sha512-00n7m4z+swWHoFQLHLvrIBIEoxnGUBsl3ogvX79ITpcn8CHczDwtxYy5+RhMoAraRdfN3oB+8QIpN3KOxs2Q7w==
+
+"@braintree/iframer@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@braintree/iframer/-/iframer-1.1.0.tgz#7e59b975c2a48bd92616f653367a5214fc2ddd4b"
+  integrity sha512-tVpr7U6u6bqeQlHreEjYMNtnHX62vLnNWziY2kQLqkWhvusPuY5DfuGEIPpWqsd+V/a1slyTQaxK6HWTlH6A/Q==
+
+"@braintree/sanitize-url@5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@braintree/sanitize-url/-/sanitize-url-5.0.2.tgz#b23080fa35520e993a8a37a0f5bca26aa4650a48"
+  integrity sha512-NBEJlHWrhQucLhZGHtSxM2loSaNUMajC7KOYJLyfcdW/6goVoff2HoYI3bz8YCDN0wKGbxtUL0gx2dvHpvnWlw==
+
+"@braintree/uuid@0.1.0", "@braintree/uuid@^0.1.0":
   version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@braintree/class-list/-/class-list-0.1.0.tgz#d6c8606ce6a82b4b37f28e32eadd090abcf1adaa"
-  integrity sha512-AmXPsYhiNJKcxuwkgQjwyyTwFCeRlyFTeUJ9ecV/jLxS8ZH8fCAB4enYgArMRyvCekZZkqLK54kOJ6+OJBzJwA==
+  resolved "https://registry.yarnpkg.com/@braintree/uuid/-/uuid-0.1.0.tgz#ab9355015a7fb0e25cf3c2ff9cd32ece8ea304b0"
+  integrity sha512-YvZJdlNcK5EnR+7M8AjgEAf4Qx696+FOSYlPfy5ePn80vODtVAUU0FxHnzKZC0og1VbDNQDDiwhthR65D4Na0g==
 
-"@braintree/event-emitter@0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@braintree/event-emitter/-/event-emitter-0.3.0.tgz#8239ad51c71707b317f30da2d29abb369f91a579"
-  integrity sha512-yzC81QgTuL18RK9Da4C5oAyta5OLNZ3mGqiGKZFc8BKxOnGJN5ObhiFiOdbMbvPUYJQ4teZsal7j00o5RFlGcQ==
-
-"@braintree/extended-promise@0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@braintree/extended-promise/-/extended-promise-0.3.0.tgz#84e99105e520c6c454c3922848b13222b8999c50"
-  integrity sha512-AOBCcLlDo/JzxKfHN0s3QQjtDjVPgQAQ5INUomloTfg6qq5inEdHOkvts8Z/9RqqoCrOKgEbnRpGgWMQn+z1RA==
-
-"@braintree/iframer@1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@braintree/iframer/-/iframer-1.0.3.tgz#21dd1fd4cebd4154aeab1efa4d5b0d5f4384364e"
-  integrity sha1-Id0f1M69QVSuqx76TVsNX0OENk4=
-
-"@braintree/sanitize-url@4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@braintree/sanitize-url/-/sanitize-url-4.0.0.tgz#2cda79ffd67b6ea919a63b5e1a883b92d636e844"
-  integrity sha512-bOoFoTxuEUuri/v1q0OXN0HIrZ2EiZlRSKdveU8vS5xf2+g0TmpXhmxkTc1s+XWR5xZNoVU4uvf/Mher98tfLw==
-
-"@braintree/wrap-promise@2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@braintree/wrap-promise/-/wrap-promise-2.0.0.tgz#6bf4bd934f18bb1b460bdd608d81154db8d2ff65"
-  integrity sha512-I9s8c/bHBx7gM04yHGKjRoyqX1NhT4d3RIQjLZDW+yFI3DRmi/8JYDpxQeW4fiU6bWX2f3KV1Oa8r2nwKeaAwA==
+"@braintree/wrap-promise@2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@braintree/wrap-promise/-/wrap-promise-2.1.0.tgz#7e27ffc5dacd2d71533b0c42506eea8e7c2e50fa"
+  integrity sha512-UIrJB+AfKU0CCfbMoWrsGpd2D/hBpY/SGgFI6WRHPOwhaZ3g9rz1weiJ6eb6L9KgVyunT7s2tckcPkbHw+NzeA==
 
 "@iarna/toml@^2.2.0":
   version "2.2.3"
@@ -1910,43 +1915,45 @@ braces@^2.3.1, braces@^2.3.2:
     to-regex "^3.0.1"
 
 "braintree-web-drop-in-react@file:..":
-  version "1.1.0"
+  version "1.2.1"
   dependencies:
-    braintree-web-drop-in "^1.22.1"
+    braintree-web-drop-in "^1.24.0"
     prop-types "^15.7.2"
 
-braintree-web-drop-in@^1.22.1:
-  version "1.22.1"
-  resolved "https://registry.yarnpkg.com/braintree-web-drop-in/-/braintree-web-drop-in-1.22.1.tgz#39644b4dc312ebf3072b4646c3196edb0e3b557f"
-  integrity sha512-/WLy3RVJM24OFYbKObkruKPt+jqwJNXSTOXxq/SOKdIn0RFlmg8NlnvQSxp60rDCJD30r4CGG2dEu1RL0BUdwg==
+braintree-web-drop-in@^1.24.0:
+  version "1.31.2"
+  resolved "https://registry.yarnpkg.com/braintree-web-drop-in/-/braintree-web-drop-in-1.31.2.tgz#f6166fea91a83ddf8df6b5f727bf10313c60ab0b"
+  integrity sha512-CsNBpHqX45+RXb2IitXHv1IittFxFsiyMddZ3G6TSruCHGqzTcUubt6nu3cOcQVSxJNF0Ud7aCHP6v7wkw9szg==
   dependencies:
-    "@braintree/asset-loader" "0.3.1"
-    "@braintree/browser-detection" "1.9.0"
-    "@braintree/class-list" "0.1.0"
-    "@braintree/event-emitter" "0.3.0"
-    "@braintree/wrap-promise" "2.0.0"
-    braintree-web "3.58.0"
-    promise-polyfill "8.1.3"
+    "@braintree/asset-loader" "0.4.4"
+    "@braintree/browser-detection" "1.12.0"
+    "@braintree/class-list" "0.2.0"
+    "@braintree/event-emitter" "0.4.1"
+    "@braintree/uuid" "0.1.0"
+    "@braintree/wrap-promise" "2.1.0"
+    braintree-web "3.80.0"
+    promise-polyfill "8.2.0"
 
-braintree-web@3.58.0:
-  version "3.58.0"
-  resolved "https://registry.yarnpkg.com/braintree-web/-/braintree-web-3.58.0.tgz#1ecc94e51c23d413fe26c32d8b148b70b8592934"
-  integrity sha512-tqhH6XIaTFkOFnPcDK+/h8i2rEH1/QYmsKkmk51TVCL4BRRrWvk5SVzpw2Ueg0wrNbWWpqMG3Kh6gfTMvRwxPA==
+braintree-web@3.80.0:
+  version "3.80.0"
+  resolved "https://registry.yarnpkg.com/braintree-web/-/braintree-web-3.80.0.tgz#2d754948dcedf04d2f5629abcde8f9f2d53dddbd"
+  integrity sha512-XVWHPjdur4HPOCtfNMsiDeU7ZjW3/jO43y4I2aMmYtS/fDk7LkKBWZjCCsbTgxUq5JxwtAQdFtNGpdYWuDWkkQ==
   dependencies:
-    "@braintree/asset-loader" "0.3.1"
-    "@braintree/browser-detection" "1.9.0"
-    "@braintree/class-list" "0.1.0"
-    "@braintree/event-emitter" "0.3.0"
-    "@braintree/extended-promise" "0.3.0"
-    "@braintree/iframer" "1.0.3"
-    "@braintree/sanitize-url" "4.0.0"
-    "@braintree/wrap-promise" "2.0.0"
-    card-validator "6.2.0"
-    credit-card-type "8.3.0"
-    framebus "3.0.2"
-    inject-stylesheet "2.0.0"
-    promise-polyfill "8.1.3"
-    restricted-input "2.1.0"
+    "@braintree/asset-loader" "0.4.4"
+    "@braintree/browser-detection" "1.12.0"
+    "@braintree/class-list" "0.2.0"
+    "@braintree/event-emitter" "0.4.1"
+    "@braintree/extended-promise" "0.4.1"
+    "@braintree/iframer" "1.1.0"
+    "@braintree/sanitize-url" "5.0.2"
+    "@braintree/uuid" "0.1.0"
+    "@braintree/wrap-promise" "2.1.0"
+    card-validator "8.1.1"
+    credit-card-type "9.1.0"
+    framebus "5.1.2"
+    inject-stylesheet "4.0.0"
+    promise-polyfill "8.2.0"
+    restricted-input "3.0.4"
 
 brfs@^1.2.0:
   version "1.6.1"
@@ -2134,12 +2141,12 @@ caniuse-lite@^1.0.30001038:
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001038.tgz#44da3cbca2ab6cb6aa83d1be5d324e17f141caff"
   integrity sha512-zii9quPo96XfOiRD4TrfYGs+QsGZpb2cGiMAzPjtf/hpFgB6zCPZgJb7I1+EATeMw/o+lG8FyRAnI+CWStHcaQ==
 
-card-validator@6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/card-validator/-/card-validator-6.2.0.tgz#59037c6480df5786473cab720f165ba868560e0b"
-  integrity sha512-1vYv45JaE9NmixZr4dl6ykzbFKv7imI9L7MQDs235b/a7EGbG8rrEsipeHtVvscLSUbl3RX6UP5gyOe0Y2FlHA==
+card-validator@8.1.1:
+  version "8.1.1"
+  resolved "https://registry.yarnpkg.com/card-validator/-/card-validator-8.1.1.tgz#418f5f32435553fb9ca2a02634ad413bb38697a9"
+  integrity sha512-cN4FsKwoTfTFnqPwVc7TQLSsH/QMDB3n/gWm0XelcApz4sKipnOQ6k33sa3bWsNnnIpgs7eXOF+mUV2UQAX2Sw==
   dependencies:
-    credit-card-type "^8.0.0"
+    credit-card-type "^9.1.0"
 
 caseless@~0.12.0:
   version "0.12.0"
@@ -2185,10 +2192,10 @@ chokidar@^2.1.5:
   optionalDependencies:
     fsevents "^1.2.7"
 
-chownr@^1.1.1:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/chownr/-/chownr-1.1.3.tgz#42d837d5239688d55f303003a508230fa6727142"
-  integrity sha512-i70fVHhmV3DtTl6nqvZOnIjbY0Pe4kAUjwHj8z0zAdgBtYrJyYwLKCCuRBQ5ppkyL0AkN7HKRnETdmdp1zqNXw==
+chownr@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/chownr/-/chownr-1.1.4.tgz#6fc9d7b42d32a583596337666e7d08084da2cc6b"
+  integrity sha512-jJ0bqzaylmJtVnNgzTeSOs8DPavpbYgEr/b0YL8/2GO3xJEhInFmhKMUnEJQjZumK7KXGFhUy89PrsJWlakBVg==
 
 cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
   version "1.0.4"
@@ -2425,10 +2432,10 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-credit-card-type@8.3.0, credit-card-type@^8.0.0:
-  version "8.3.0"
-  resolved "https://registry.yarnpkg.com/credit-card-type/-/credit-card-type-8.3.0.tgz#f93c187c9362411544158c91d552efcc443aa87a"
-  integrity sha512-czfZUpQ7W9CDxZL4yFLb1kFtM/q2lTOY975hL2aO+DC8+GRNDVSXVCHXhVFZPxiUKmQCZbFP8vIhxx5TBQaThw==
+credit-card-type@9.1.0, credit-card-type@^9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/credit-card-type/-/credit-card-type-9.1.0.tgz#54dd96c93b6579623e9c8656e6798fc2b93f5f05"
+  integrity sha512-CpNFuLxiPFxuZqhSKml3M+t0K/484pMAnfYWH14JoD7OZMnmC0Lmo+P7JX9SobqFpRoo7ifA18kOHdxJywYPEA==
 
 cross-spawn@^6.0.4:
   version "6.0.5"
@@ -3159,17 +3166,19 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-framebus@3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/framebus/-/framebus-3.0.2.tgz#0c99c70cb507522aae6ed485e1317fc913873a8a"
-  integrity sha512-OqhYkhgRYlpKZoSl5EA3whKh8O8omFPCzf7MGzFqC6CtrT8lg7evNgU6QdjC3uY3ATq5saMDiY5HJ8KGiGDYCA==
+framebus@5.1.2:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/framebus/-/framebus-5.1.2.tgz#cb38cf6a282d405411227cfaab4a1095ca9e8e15"
+  integrity sha512-Z/y6/0gHVx4Td4c0jkDiASBo0pXlJ2fKOP6CynSFnxTzqojG9xOKOFOqoYkcBHlz1vP4t4yHHR6Esp+GsYIh/Q==
+  dependencies:
+    "@braintree/uuid" "^0.1.0"
 
 fresh@0.5.2:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/fresh/-/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"
   integrity sha1-PYyt2Q2XZWn6g1qx+OSyOhBWBac=
 
-fs-minipass@^1.2.5:
+fs-minipass@^1.2.7:
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/fs-minipass/-/fs-minipass-1.2.7.tgz#ccff8570841e7fe4265693da88936c55aed7f7c7"
   integrity sha512-GWSSJGFy4e9GUeCcbIkED+bgAoFyj7XF1mV8rma3QW4NIqX9Kyx79N/PF61H5udOV3aY1IaMLs6pGbH71nlCTA==
@@ -3524,10 +3533,10 @@ ini@~1.3.0:
   resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
   integrity sha512-RZY5huIKCMRWDUqZlEi72f/lmXKMvuszcMBduliQ3nnWbx9X/ZBQO7DijMEYS9EhHBb2qacRUMtC7svLwe0lcw==
 
-inject-stylesheet@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/inject-stylesheet/-/inject-stylesheet-2.0.0.tgz#5153437cbb30c55a203613a6f079a94089b6c361"
-  integrity sha512-XiItpXWDXRrH1VhG5AnHghuZdpDp6UeugiOKBr3RGmANucucHwKuT0BPSB0zpDqiX3P+rhhJFip1rxOI18+/Tw==
+inject-stylesheet@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/inject-stylesheet/-/inject-stylesheet-4.0.0.tgz#9c2080b227fe17e7f8d5c0aabc42130de4f415c0"
+  integrity sha512-EULSmN+gdAMR4w9kk57HJ1Lz6Xp+9OGgTbxpNV2QSncG+LWlihH1d/Clm8ui6b+LAqmIVcrtWfwDrMEgDiUpjg==
 
 invariant@^2.2.2, invariant@^2.2.4:
   version "2.2.4"
@@ -4111,11 +4120,6 @@ minimatch@^3.0.4:
   dependencies:
     brace-expansion "^1.1.7"
 
-minimist@0.0.8:
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
-  integrity sha1-hX/Kv8M5fSYluCKCYuhqp6ARsF0=
-
 minimist@^1.1.3, minimist@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
@@ -4126,7 +4130,7 @@ minimist@^1.2.5:
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
   integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
 
-minipass@^2.6.0, minipass@^2.8.6, minipass@^2.9.0:
+minipass@^2.6.0, minipass@^2.9.0:
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/minipass/-/minipass-2.9.0.tgz#e713762e7d3e32fed803115cf93e04bca9fcc9a6"
   integrity sha512-wxfUjg9WebH+CUDX/CdbRlh5SmfZiy/hpkxaRI16Y9W56Pa75sWgd/rvFilSgrauD9NyFymP/+JFV3KwzIsJeg==
@@ -4134,7 +4138,7 @@ minipass@^2.6.0, minipass@^2.8.6, minipass@^2.9.0:
     safe-buffer "^5.1.2"
     yallist "^3.0.0"
 
-minizlib@^1.2.1:
+minizlib@^1.3.3:
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/minizlib/-/minizlib-1.3.3.tgz#2290de96818a34c29551c8a8d301216bd65a861d"
   integrity sha512-6ZYMOEnmVsdCeTJVE0W9ZD+pVnE8h9Hma/iOwwRDsdQoePpoX56/8B6z3P9VNwppJuBKNRuFDRNRqRWexT9G9Q==
@@ -4149,12 +4153,12 @@ mixin-deep@^1.2.0:
     for-in "^1.0.2"
     is-extendable "^1.0.1"
 
-mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
-  integrity sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
+mkdirp@^0.5.1, mkdirp@^0.5.5, mkdirp@~0.5.1:
+  version "0.5.5"
+  resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.5.tgz#d91cefd62d1436ca0f41620e251288d420099def"
+  integrity sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==
   dependencies:
-    minimist "0.0.8"
+    minimist "^1.2.5"
 
 ms@2.0.0:
   version "2.0.0"
@@ -5071,10 +5075,10 @@ process@^0.11.10:
   resolved "https://registry.yarnpkg.com/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
   integrity sha1-czIwDoQBYb2j5podHZGn1LwW8YI=
 
-promise-polyfill@8.1.3, promise-polyfill@^8.1.0:
-  version "8.1.3"
-  resolved "https://registry.yarnpkg.com/promise-polyfill/-/promise-polyfill-8.1.3.tgz#8c99b3cf53f3a91c68226ffde7bde81d7f904116"
-  integrity sha512-MG5r82wBzh7pSKDRa9y+vllNHz3e3d4CNj1PQE4BQYxLme0gKYYBm9YENq+UkEikyZ0XbiGWxYlVw3Rl9O/U8g==
+promise-polyfill@8.2.0, promise-polyfill@^8.1.3:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/promise-polyfill/-/promise-polyfill-8.2.0.tgz#367394726da7561457aba2133c9ceefbd6267da0"
+  integrity sha512-k/TC0mIcPVF6yHhUvwAp7cvL6I2fFV7TzF1DuGPI8mBh4QQazf36xCKEHKTZKRysEoTQoQdKyP25J8MPJp7j5g==
 
 prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
@@ -5439,12 +5443,12 @@ restore-cursor@^2.0.0:
     onetime "^2.0.0"
     signal-exit "^3.0.2"
 
-restricted-input@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/restricted-input/-/restricted-input-2.1.0.tgz#3e2ff79e8fee53d3152cf859063701ded206582f"
-  integrity sha512-dH4cNfdTgChSlqYGff0zMtLSPWj3oU4oph9GvHgWhDEiHftk7/B9Ci5y5mCts2atvcm2a0gTZ8XqNaP9cVzMwg==
+restricted-input@3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/restricted-input/-/restricted-input-3.0.4.tgz#6e4453097632f3f18aa8201d6c291357e5771211"
+  integrity sha512-HNrlYBkaQS3SPaTNp5PwqA2iY2hKHJAC1TSdPAi7Nst2jwW76ejantGp0BSf4ckMXPygmDPlxqDRvJ1rRd3mEQ==
   dependencies:
-    "@braintree/browser-detection" "^1.9.0"
+    "@braintree/browser-detection" "^1.12.0"
 
 ret@~0.1.10:
   version "0.1.15"
@@ -5476,10 +5480,10 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@^5.1.1, safe-buffer@^5.1.2, safe-buffer@~5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.2.0.tgz#b74daec49b1148f88c64b68d49b1e815c1f2f519"
-  integrity sha512-fZEwUGbVl7kouZs1jCdMLdt95hdIv0ZeHg6L7qPeciMZhZ+/gdesW4wgTARkrFWEpspjEATAzUGPG8N2jJiwbg==
+safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@^5.1.1, safe-buffer@^5.1.2, safe-buffer@^5.2.1, safe-buffer@~5.2.0:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
+  integrity sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==
 
 safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.2"
@@ -5915,17 +5919,17 @@ symbol-tree@^3.2.2:
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
 
 tar@^4:
-  version "4.4.13"
-  resolved "https://registry.yarnpkg.com/tar/-/tar-4.4.13.tgz#43b364bc52888d555298637b10d60790254ab525"
-  integrity sha512-w2VwSrBoHa5BsSyH+KxEqeQBAllHhccyMFVHtGtdMpF4W7IRWfZjFiQceJPChOeTsSDVUpER2T8FA93pr0L+QA==
+  version "4.4.19"
+  resolved "https://registry.yarnpkg.com/tar/-/tar-4.4.19.tgz#2e4d7263df26f2b914dee10c825ab132123742f3"
+  integrity sha512-a20gEsvHnWe0ygBY8JbxoM4w3SJdhc7ZAuxkLqh+nvNQN2IOt0B5lLgM490X5Hl8FF0dl0tOf2ewFYAlIFgzVA==
   dependencies:
-    chownr "^1.1.1"
-    fs-minipass "^1.2.5"
-    minipass "^2.8.6"
-    minizlib "^1.2.1"
-    mkdirp "^0.5.0"
-    safe-buffer "^5.1.2"
-    yallist "^3.0.3"
+    chownr "^1.1.4"
+    fs-minipass "^1.2.7"
+    minipass "^2.9.0"
+    minizlib "^1.3.3"
+    mkdirp "^0.5.5"
+    safe-buffer "^5.2.1"
+    yallist "^3.1.1"
 
 terser@^3.7.3:
   version "3.17.0"
@@ -6344,7 +6348,7 @@ xtend@^4.0.0, xtend@~4.0.1:
   resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.2.tgz#bb72779f5fa465186b1f438f674fa347fdb5db54"
   integrity sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==
 
-yallist@^3.0.0, yallist@^3.0.3:
+yallist@^3.0.0, yallist@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-3.1.1.tgz#dbb7daf9bfd8bac9ab45ebf602b8cbad0d5d08fd"
   integrity sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==
